@@ -5,3 +5,4 @@ def func2():
     pass
 
 print "Hello Team"
+print "Hey"
