@@ -9,8 +9,6 @@ def func2():
 func1()
 
 func2()
-print "what is going on"
-
 print "Hello Team"
 
 print "Hey"
