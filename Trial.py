@@ -7,4 +7,4 @@ def func2():
 func1()
 
 func2()
-print "hi"
+print "what is going on"
