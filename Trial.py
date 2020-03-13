@@ -4,3 +4,7 @@ def func1():
 def func2():
     pass
 
+func1()
+
+func2()
+print "hi"
