@@ -4,7 +4,7 @@ from __future__ import print_function
 import sys
 import argparse
 #import cv2
-import editdistance
+import edit_distance
 from DataLoader import DataLoader, Batch
 from Model import Model, DecoderType
 from SamplePreprocessor import preprocess
