@@ -75,10 +75,6 @@ class MyGUI:
         self.button14.pack
         self.button15 = tkinter.Button(self.mini_window,text='Documentary',command=self.DocumentaryMovieOptions)
         self.button15.pack()
-        
-    
-
-     
 
     def RealityMovieOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -212,6 +208,8 @@ class MyGUI:
         self.button24.pack()
         self.button25 = tkinter.Button(self.mini_window,text='R&B',command=self.RandBOptions)
         self.button25.pack()
+        self.button40 = tkinter.Button(self.mini_window,text='Lo-Fi',command=self.LoFiOptions)
+        self.button40.pack()
 
     def CountryOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -258,6 +256,14 @@ class MyGUI:
         self.avg_result_display.pack()
 
     def RandBOptions(self):
+        self.mini_window = tkinter.Toplevel()
+        self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
+        self.avg_result_var = tkinter.StringVar()
+        self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
+        self.avg_mess.pack(fill="both")
+        self.avg_result_display.pack()
+
+    def LoFiOptions(self):
         self.mini_window = tkinter.Toplevel()
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
