@@ -10,14 +10,14 @@ workout routine-
 	core-
 
 netflix-
-	show- 
+	shows- 
 		reality-
 		action-
 		romance- 
 		horror-
 		comedy- 
 		documentary-
-	movie- 
+	movies- 
 		action-
 		romance- 
 		horror-
@@ -25,16 +25,16 @@ netflix-
 		documentary-
 
 productivity- 
-	homework- 
+	homework-
 	chores- 
 	puzzle-
 
 music- 
 	country- 
-	rock- classic alternative 
+	rock- 
 	rap- 
 	r&b-
 
 games- 
-	pygames- 
+	games 
 	anassas's skateboard game
