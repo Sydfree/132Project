@@ -1,8 +1,8 @@
 cooking- 
-	breakfast- cereal, waffles, cinnnamon rolls 
-	lunch- pizza rolls, chicken nuggets, hot pockets, noodles
-	dinner- lasgna, spaghetti, chicken
-	snack- chips, fruit, cookies
+	breakfast- https://www.scoopwhoop.com/food/16-healthy-3-ingredient-breakfast-recipes-to-try-out-while-in-quarantine/
+	lunch- https://www.tasteofhome.com/collection/creative-quarantine-meals/
+	dinner- https://www.eatthis.com/quarantine-recipes/
+	snack- https://health.ucdavis.edu/good-food/recipes/healthy-snacks-covid-19.html
 
 workout routines- 
 	arms- pushups, hand stands
