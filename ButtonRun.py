@@ -1,19 +1,3 @@
-##import tkinter as tk
-##import tkinter.messagebox
-##
-##top = tk.Tk()
-##
-##def helloCallBack():
-##    tkinter.messagebox.showinfo("Hello Python", "Hello World")
-##    
-##
-##B = tkinter.Button(top, text = "Hello", command = helloCallBack)
-##C = tkinter.Button(top, text = "Test", command = helloCallBack)
-##
-##B.pack()
-##C.pack()
-##top.mainloop()
-
 import tkinter as tkinter
 import random
 class MyGUI:
@@ -270,6 +254,7 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
+    
 
     def GamingOptions(self):
         self.mini_window = tkinter.Toplevel()
