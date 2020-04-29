@@ -16,12 +16,14 @@
 
 import tkinter as tkinter
 import random
+
 class MyGUI:
     def __init__(self):
         self.main_window = tkinter.Tk()
         self.button1 = tkinter.Button(self.main_window,text='Average',command=self.average)
         self.button1.pack()
         tkinter.mainloop()
+
     def average(self):
         self.mini_window = tkinter.Toplevel()
         self.avg_mess = tkinter.Label(self.mini_window,text='Results:')
@@ -31,9 +33,11 @@ class MyGUI:
         self.avg_result_display.pack()
         self.button2 = tkinter.Button(self.mini_window,text='Calculate',command=self.avg_calc)
         self.button2.pack()
+
     def avg_calc(self):
         x = random.randint(100,200)
         self.avg_result = (100+300+x)/3
         print("result:", self.avg_result)
         self.avg_result_var.set(self.avg_result)
+
 gui = MyGUI()
