@@ -288,7 +288,11 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_lofi = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
+<<<<<<< HEAD
         webbrowser.open('https://www.youtube.com/results?search_query=slipfunc'))
+=======
+        webbrowser.open('https://www.youtube.com/results?search_query=the+girl+next+door+lofi'))
+>>>>>>> f057c00f9f7ce9269f80422cbff0d7a535c669bf
         self.button_lofi.pack()
     
 
