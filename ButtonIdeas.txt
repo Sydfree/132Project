@@ -31,29 +31,36 @@ productivity-
 
 music- 
 	country- Luke Combs- https://www.youtube.com/results?search_query=Luke+Combs 
-		Thomas Rhett- 
-		Tyler Childers- 
-		Koe Wetzel- 
-		Cody Jinks- 
+		Thomas Rhett- https://www.youtube.com/results?search_query=Thomas+Rhett
+		Tyler Childers- https://www.youtube.com/results?search_query=Tyler+Childers
+		Koe Wetzel- https://www.youtube.com/results?search_query=Koe+Wetzel
+		Cody Jinks- https://www.youtube.com/results?search_query=Cody+Jinks
  	rock- 
-		Queen- 
-		Paramore- 
-		Green Day-
+		Queen- https://www.youtube.com/results?search_query=Queen
+		Paramore- https://www.youtube.com/results?search_query=Paramore
+		Green Day-https://www.youtube.com/results?search_query=Green+Day
 	rap- 
-		Drake- 
-		J. Cole- 
-		Kendrick Lamar- 
-		Tyler the Creator-
+		Drake- https://www.youtube.com/results?search_query=Drake
+		J. Cole- https://www.youtube.com/results?search_query=J.+Cole
+		Kendrick Lamar- https://www.youtube.com/results?search_query=Kendrick+Lamar
+		Tyler the Creator-https://www.youtube.com/results?search_query=Tyler+the+Creator
 	r&b- 
-		Jhene Aiko- 
-		Bryson Tiller- 
-		Beyonce- 
-		Michael Jackson-
+		Jhene Aiko- https://www.youtube.com/results?search_query=Jhene+Aiko
+		Bryson Tiller- https://www.youtube.com/results?search_query=Bryson+Tiller
+		Beyonce- https://www.youtube.com/results?search_query=Beyonce
+		Michael Jackson-https://www.youtube.com/results?search_query=Michael+Jackson
 	lo-fi- 
+<<<<<<< HEAD
 		kudasai- 
 		slipfunc- 
 		powfu- https://www.youtube.com/results?search_query=powfu
 		the girl next door- https://www.youtube.com/results?search_query=the+girl+next+door+lofi
+=======
+		kudasai- https://www.youtube.com/results?search_query=Michael+Jackson
+		slipfunc- https://www.youtube.com/results?search_query=slipfunc
+		powfu- 
+		the girl next door-
+>>>>>>> d364e27dcc42418b37aaa095581f3a1fc567b9da
 
 games- 
 	Jack Box
