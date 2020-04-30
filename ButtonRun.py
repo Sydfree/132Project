@@ -50,29 +50,16 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button10 = tkinter.Button(self.mini_window,text='Reality',command=self.RealityMovieOptions)
+        self.button10 = tkinter.Button(self.mini_window,text='Action',command=self.ActionMovieOptions)
         self.button10.pack()
-        self.button11 = tkinter.Button(self.mini_window,text='Action',command=self.ActionMovieOptions)
+        self.button11 = tkinter.Button(self.mini_window,text='Romance',command=self.RomanceMovieOptions)
         self.button11.pack()
-        self.button12 = tkinter.Button(self.mini_window,text='Romance',command=self.RomanceMovieOptions)
+        self.button12 = tkinter.Button(self.mini_window,text='Horror',command=self.HorrorMovieOptions)
         self.button12.pack()
-        self.button13 = tkinter.Button(self.mini_window,text='Horror',command=self.HorrorMovieOptions)
+        self.button13 = tkinter.Button(self.mini_window,text='Comedy',command=self.ComedyMovieOptions)
         self.button13.pack()
-        self.button14 = tkinter.Button(self.mini_window,text='Comedy',command=self.ComedyMovieOptions)
-        self.button14.pack
-        self.button15 = tkinter.Button(self.mini_window,text='Documentary',command=self.DocumentaryMovieOptions)
-        self.button15.pack()
-
-    def RealityMovieOptions(self):
-        self.mini_window = tkinter.Toplevel()
-        self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! Click To Start Your Journey...')
-        self.avg_result_var = tkinter.StringVar()
-        self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
-        self.avg_mess.pack(fill="both")
-        self.avg_result_display.pack()
-        self.button_reality = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
-        self.button_reality.pack()
+        self.button14 = tkinter.Button(self.mini_window,text='Documentary',command=self.DocumentaryMovieOptions)
+        self.button14.pack()
         
     def ActionMovieOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -82,7 +69,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_action = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'))
         self.button_action.pack()
 
     def RomanceMovieOptions(self):
@@ -93,7 +80,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_romance = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/8883?bc=34399'))
         self.button_romance.pack()
 
     def HorrorMovieOptions(self):
@@ -104,7 +91,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_horror = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/8711?bc=34399'))
         self.button_horror.pack()
 
     def ComedyMovieOptions(self):
@@ -114,6 +101,9 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
+        self.button_comedy = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
+        webbrowser.open('https://www.netflix.com/browse/genre/6548?bc=34399'))
+        self.button_comedy.pack()
 
     def DocumentaryMovieOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -123,7 +113,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_documentary = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/2243108?bc=34399'))
         self.button_documentary.pack()
 
 
@@ -134,18 +124,18 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button16 = tkinter.Button(self.mini_window,text='Reality',command=self.RealityShowOptions)
+        self.button15 = tkinter.Button(self.mini_window,text='Reality',command=self.RealityShowOptions)
+        self.button15.pack()
+        self.button16 = tkinter.Button(self.mini_window,text='Action',command=self.ActionShowOptions)
         self.button16.pack()
-        self.button17 = tkinter.Button(self.mini_window,text='Action',command=self.ActionShowOptions)
+        self.button17 = tkinter.Button(self.mini_window,text='Romance',command=self.RomanceShowOptions)
         self.button17.pack()
-        self.button18 = tkinter.Button(self.mini_window,text='Romance',command=self.RomanceShowOptions)
+        self.button18 = tkinter.Button(self.mini_window,text='Horror',command=self.HorrorShowOptions)
         self.button18.pack()
-        self.button19 = tkinter.Button(self.mini_window,text='Horror',command=self.HorrorShowOptions)
+        self.button19 = tkinter.Button(self.mini_window,text='Comedy',command=self.ComedyShowOptions)
         self.button19.pack()
-        self.button20 = tkinter.Button(self.mini_window,text='Comedy',command=self.ComedyShowOptions)
-        self.button20.pack
-        self.button21 = tkinter.Button(self.mini_window,text='Documentary',command=self.DocumentaryShowOptions)
-        self.button21.pack()
+        self.button20 = tkinter.Button(self.mini_window,text='Documentary',command=self.DocumentaryShowOptions)
+        self.button20.pack()
 
     def RealityShowOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -155,7 +145,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_reality_show = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/9833?bc=83'))
         self.button_reality_show.pack()
 
     def ActionShowOptions(self):
@@ -166,7 +156,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_action_show = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/10673?bc=83'))
         self.button_action_show.pack()
 
     def RomanceShowOptions(self):
@@ -177,7 +167,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_romance_show = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/26156?bc=83'))
         self.button_romance_show.pack()
 
     def HorrorShowOptions(self):
@@ -188,7 +178,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_horror_show = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/83059?bc=83'))
         self.button_horror_show.pack()
 
     def ComedyShowOptions(self):
@@ -199,7 +189,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_comedy_show = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/10375?bc=83'))
         self.button_comedy_show.pack()
 
     def DocumentaryShowOptions(self):
@@ -210,7 +200,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_documentary_show = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.netflix.com/browse/genre/10105?bc=83'))
         self.button_documentary_show.pack()
 
     def MusicOptions(self):
@@ -220,16 +210,16 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button22 = tkinter.Button(self.mini_window,text='Country',command=self.CountryOptions)
+        self.button21 = tkinter.Button(self.mini_window,text='Country',command=self.CountryOptions)
+        self.button21.pack()
+        self.button22 = tkinter.Button(self.mini_window,text='Rock',command=self.RockOptions)
         self.button22.pack()
-        self.button23 = tkinter.Button(self.mini_window,text='Rock',command=self.RockOptions)
+        self.button23 = tkinter.Button(self.mini_window,text='Rap',command=self.RapOptions)
         self.button23.pack()
-        self.button24 = tkinter.Button(self.mini_window,text='Rap',command=self.RapOptions)
+        self.button24 = tkinter.Button(self.mini_window,text='R&B',command=self.RandBOptions)
         self.button24.pack()
-        self.button25 = tkinter.Button(self.mini_window,text='R&B',command=self.RandBOptions)
+        self.button25 = tkinter.Button(self.mini_window,text='Lo-Fi',command=self.LoFiOptions)
         self.button25.pack()
-        self.button40 = tkinter.Button(self.mini_window,text='Lo-Fi',command=self.LoFiOptions)
-        self.button40.pack()
 
     def CountryOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -297,10 +287,10 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button28 = tkinter.Button(self.mini_window,text='Preloaded PyGames?',command=self.PyGamesOptions)
-        self.button28.pack
-        self.button29 = tkinter.Button(self.mini_window,text='Something Homemade',command=self.HomemadeOptions)
-        self.button29.pack()
+        self.button26 = tkinter.Button(self.mini_window,text='Preloaded PyGames?',command=self.PyGamesOptions)
+        self.button26.pack
+        self.button27 = tkinter.Button(self.mini_window,text='Something Homemade',command=self.HomemadeOptions)
+        self.button27.pack()
 
     def PyGamesOptions(self):
         tkinter.messagebox.showinfo("We need to figure out how to load PyGames to pop up here.")
@@ -316,14 +306,14 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button30 = tkinter.Button(self.mini_window,text='Breakfast?',command=self.BreakfastOptions)
+        self.button28 = tkinter.Button(self.mini_window,text='Breakfast?',command=self.BreakfastOptions)
+        self.button28.pack()
+        self.button29 = tkinter.Button(self.mini_window,text='Lunch?',command=self.LunchOptions)
+        self.button29.pack()
+        self.button30 = tkinter.Button(self.mini_window,text='Dinner?',command=self.DinnerOptions)
         self.button30.pack()
-        self.button31 = tkinter.Button(self.mini_window,text='Lunch?',command=self.LunchOptions)
+        self.button31 = tkinter.Button(self.mini_window,text='Snack?',command=self.SnackOptions)
         self.button31.pack()
-        self.button32 = tkinter.Button(self.mini_window,text='Dinner?',command=self.DinnerOptions)
-        self.button32.pack()
-        self.button33 = tkinter.Button(self.mini_window,text='Snack?',command=self.SnackOptions)
-        self.button33.pack()
 
     def BreakfastOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -377,12 +367,12 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button34 = tkinter.Button(self.mini_window,text='Homework?',command=self.Homework)
+        self.button32 = tkinter.Button(self.mini_window,text='Homework?',command=self.Homework)
+        self.button32.pack()
+        self.button33 = tkinter.Button(self.mini_window,text='Chores?',command=self.Chores)
+        self.button33.pack()
+        self.button34 = tkinter.Button(self.mini_window,text='Puzzle?',command=self.Puzzle)
         self.button34.pack()
-        self.button35 = tkinter.Button(self.mini_window,text='Chores?',command=self.Chores)
-        self.button35.pack()
-        self.button36 = tkinter.Button(self.mini_window,text='Puzzle?',command=self.Puzzle)
-        self.button36.pack()
 
     def Homework(self):
         self.mini_window = tkinter.Toplevel()
@@ -415,12 +405,12 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button37 = tkinter.Button(self.mini_window,text='Arms?',command=self.ArmsWorkouts)
-        self.button37.pack()
-        self.button38 = tkinter.Button(self.mini_window,text='Legs?',command=self.LegWorkouts)
-        self.button38.pack()
-        self.button39 = tkinter.Button(self.mini_window,text='Core?',command=self.CoreWorkouts)
-        self.button39.pack()        
+        self.button35 = tkinter.Button(self.mini_window,text='Arms?',command=self.ArmsWorkouts)
+        self.button35.pack()
+        self.button36 = tkinter.Button(self.mini_window,text='Legs?',command=self.LegWorkouts)
+        self.button36.pack()
+        self.button37 = tkinter.Button(self.mini_window,text='Core?',command=self.CoreWorkouts)
+        self.button37.pack()        
 
 
     def ArmsWorkouts(self):

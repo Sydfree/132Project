@@ -11,18 +11,18 @@ workout routines-
 
 netflix-
 	shows- 
-		reality-
-		action- 
-		romance-
-		horror-
-		comedy-
-		documentary-
+		reality- https://www.netflix.com/browse/genre/9833?bc=83
+		action- https://www.netflix.com/browse/genre/10673?bc=83 
+		romance- https://www.netflix.com/browse/genre/26156?bc=83
+		horror- https://www.netflix.com/browse/genre/83059?bc=83
+		comedy- https://www.netflix.com/browse/genre/10375?bc=83
+		documentary- https://www.netflix.com/browse/genre/10105?bc=83
 	movies- 
-		action-
-		romance-
-		horror-
-		comedy-
-		documentary-
+		action- https://www.netflix.com/browse/genre/1365?bc=34399 
+		romance- https://www.netflix.com/browse/genre/8883?bc=34399
+		horror- https://www.netflix.com/browse/genre/8711?bc=34399
+		comedy- https://www.netflix.com/browse/genre/6548?bc=34399
+		documentary- https://www.netflix.com/browse/genre/2243108?bc=34399
 
 productivity- 
 	homework- organize schedule, study, take notes 
@@ -60,5 +60,3 @@ games-
 	House Party
 	Call of Duty
 	Anassas's skateboard game
-
-more dynamic find websites to see more recent movies/websites
