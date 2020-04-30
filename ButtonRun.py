@@ -381,6 +381,9 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
+        self.button_homework = tkinter.Button(self.mini_window, text='Clicking This Will Maybe Help...', command= lambda:
+        webbrowser.open('https://www.freecollegeschedulemaker.com/'))
+        self.button_homework.pack()
     
     def Chores(self):
         self.mini_window = tkinter.Toplevel()
@@ -389,6 +392,9 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
+        self.button_homework = tkinter.Button(self.mini_window, text='Clicking This Will Maybe Help...', command= lambda:
+        webbrowser.open(''))
+        self.button_homework.pack()
 
     def Puzzle(self):
         self.mini_window = tkinter.Toplevel()
@@ -397,6 +403,9 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
+        self.button_homework = tkinter.Button(self.mini_window, text='Clicking This Will Maybe Help...', command= lambda:
+        webbrowser.open(''))
+        self.button_homework.pack()
 
     def WorkoutOptions(self):
         self.mini_window = tkinter.Toplevel()

@@ -25,9 +25,17 @@ netflix-
 		documentary- https://www.netflix.com/browse/genre/2243108?bc=34399
 
 productivity- 
-	homework- organize schedule, study, take notes 
-	chores- sweep, wash clothes, clean counters, wash dishes
-	puzzles- 100 pieces, Nonograms, Sudoku
+	homework- 
+		organize schedule -  https://www.amazon.com/slp/planners-for-college-students/k6f77xpfpfohtp9
+		study -  http://www.waystostudy.com/
+		take notes - https://collegeinfogeek.com/?s=notes
+
+	chores- https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+	puzzles- 
+		100 pieces - https://thejigsawpuzzles.com/
+		Nonograms - https://www.puzzle-nonograms.com/
+		Sudoku - https://sudoku.com/
 
 music- 
 	country- Luke Combs- https://www.youtube.com/results?search_query=Luke+Combs 
@@ -56,7 +64,8 @@ music-
 		slipfunc- https://www.youtube.com/results?search_query=slipfunc
 
 games- 
-	Jack Box
+	Console - https://www.ranker.com/app/search.htm?q=Best%20Console%20Video%20Games
+	PC - https://www.pcgamer.com/search/?searchTerm=best+pc+games
+	Jack Box - 
 	House Party
-	Call of Duty
 	Anassas's skateboard game
