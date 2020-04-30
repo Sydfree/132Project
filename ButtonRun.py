@@ -241,7 +241,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_country = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.youtube.com/results?search_query=Luke+Combs'))
         self.button_country.pack()
         
 
@@ -358,7 +358,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_breakfast = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.scoopwhoop.com/food/16-healthy-3-ingredient-breakfast-recipes-to-try-out-while-in-quarantine/'))
         self.button_breakfast.pack()
 
     def LunchOptions(self):
