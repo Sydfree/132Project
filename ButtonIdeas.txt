@@ -11,18 +11,18 @@ workout routines-
 
 netflix-
 	shows- 
-		reality- The Bachelor, The Toys that Made Us
-		action- The 100, Gotham 
-		romance- Grey's Anatomy, Love is Blind
-		horror- Supernatural, American Horror Story
-		comedy- The Office, F is for Family
-		documentary- Tiger King, How to Fix a Drug Scandal
+		reality-
+		action- 
+		romance-
+		horror-
+		comedy-
+		documentary-
 	movies- 
-		action- Ghost Rider, SpiderMan into the Spider-verse
-		romance- Garden of Words, Her
-		horror- Scary Movie, A Nightmare on Elm Street
-		comedy- Rugrats Go Wild, Space Jam
-		documentary- Homecoming, Enter the Anime
+		action-
+		romance-
+		horror-
+		comedy-
+		documentary-
 
 productivity- 
 	homework- organize schedule, study, take notes 
@@ -30,11 +30,30 @@ productivity-
 	puzzles- 100 pieces, Nonograms, Sudoku
 
 music- 
-	country- Luke Combs(https://www.youtube.com/results?search_query=Luke+Combs), Thomas Rhett, Tyler Childers, Koe Wetzel, Cody Jinks 
- 	rock- Queen, Paramore, Green Day
-	rap- Drake, J. Cole, Kendrick Lamar, Tyler the Creator
-	r&b- Jhene Aiko, Bryson Tiller, Beyonce, Michael Jackson 
-	lo-fi- kudasai, slipfunc, powfu, the girl next door
+	country- Luke Combs- https://www.youtube.com/results?search_query=Luke+Combs 
+		Thomas Rhett- 
+		Tyler Childers- 
+		Koe Wetzel- 
+		Cody Jinks- 
+ 	rock- 
+		Queen- 
+		Paramore- 
+		Green Day-
+	rap- 
+		Drake- 
+		J. Cole- 
+		Kendrick Lamar- 
+		Tyler the Creator-
+	r&b- 
+		Jhene Aiko- 
+		Bryson Tiller- 
+		Beyonce- 
+		Michael Jackson-
+	lo-fi- 
+		kudasai- 
+		slipfunc- 
+		powfu- 
+		the girl next door-
 
 games- 
 	Jack Box
