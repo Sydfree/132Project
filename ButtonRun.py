@@ -15,7 +15,7 @@ class MyGUI:
 
         self.button1 = tkinter.Button(self.main_window,text='Click Here To Start Your Quarantine Adventure!',command=self.Category, height =15)
         self.button1.pack()
-        tkinter.mainloop()%
+        tkinter.mainloop()
 
     def quitFullScreen(self, event):
         self.fullScreenState = False
