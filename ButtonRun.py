@@ -253,7 +253,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_rock = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.youtube.com/results?search_query=Paramore'))
         self.button_rock.pack()
     
 
@@ -265,7 +265,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_rap = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.youtube.com/results?search_query=Tyler+the+Creator'))
         self.button_rap.pack()
 
     def RandBOptions(self):
@@ -276,7 +276,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_randb = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.youtube.com/results?search_query=Michael+Jackson'))
         self.button_randb.pack()
         
 
@@ -288,7 +288,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_lofi = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.youtube.com/results?search_query=slipfunc'))
         self.button_lofi.pack()
     
 
