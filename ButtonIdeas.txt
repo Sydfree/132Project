@@ -50,17 +50,10 @@ music-
 		Beyonce- https://www.youtube.com/results?search_query=Beyonce
 		Michael Jackson-https://www.youtube.com/results?search_query=Michael+Jackson
 	lo-fi- 
-<<<<<<< HEAD
-		kudasai- 
-		slipfunc- 
 		powfu- https://www.youtube.com/results?search_query=powfu
 		the girl next door- https://www.youtube.com/results?search_query=the+girl+next+door+lofi
-=======
 		kudasai- https://www.youtube.com/results?search_query=Michael+Jackson
 		slipfunc- https://www.youtube.com/results?search_query=slipfunc
-		powfu- 
-		the girl next door-
->>>>>>> d364e27dcc42418b37aaa095581f3a1fc567b9da
 
 games- 
 	Jack Box
