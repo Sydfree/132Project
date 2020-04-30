@@ -241,44 +241,21 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_country = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.youtube.com/results?search_query=Luke+Combs'))
         self.button_country.pack()
         
 
     def RockOptions(self):
         self.mini_window = tkinter.Toplevel()
-        self.avg_mess = tkinter.Label(self.mini_window,text='What Kind of Rock Are We Talking?')
-        self.avg_result_var = tkinter.StringVar()
-        self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
-        self.avg_mess.pack(fill="both")
-        self.avg_result_display.pack()
-        self.button26 = tkinter.Button(self.mini_window,text='Classic',command=self.ClassicOptions)
-        self.button26.pack
-        self.button27 = tkinter.Button(self.mini_window,text='Alternative',command=self.AlternativeOptions)
-        self.button27.pack()
-
-    def ClassicOptions(self):
-        self.mini_window = tkinter.Toplevel()
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button_classic = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
+        self.button_rock = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
         webbrowser.open('http://www.facebook.com'))
-        self.button_classic.pack()
-        
-
-    def AlternativeOptions(self):
-        self.mini_window = tkinter.Toplevel()
-        self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
-        self.avg_result_var = tkinter.StringVar()
-        self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
-        self.avg_mess.pack(fill="both")
-        self.avg_result_display.pack()
-        self.button_alternative = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
-        self.button_alternative.pack()
+        self.button_rock.pack()
+    
 
     def RapOptions(self):
         self.mini_window = tkinter.Toplevel()
@@ -358,7 +335,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_breakfast = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.scoopwhoop.com/food/16-healthy-3-ingredient-breakfast-recipes-to-try-out-while-in-quarantine/'))
         self.button_breakfast.pack()
 
     def LunchOptions(self):
@@ -369,7 +346,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_lunch = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.tasteofhome.com/collection/creative-quarantine-meals/'))
         self.button_lunch.pack()
 
     def DinnerOptions(self):
@@ -380,7 +357,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_dinner = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.eatthis.com/quarantine-recipes/'))
         self.button_dinner.pack()
         
 
@@ -392,7 +369,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_snack = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://health.ucdavis.edu/good-food/recipes/healthy-snacks-covid-19.html'))
         self.button_snack.pack()
 
     def ProductivityOptions(self):
