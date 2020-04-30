@@ -5,9 +5,9 @@ cooking-
 	snack- https://health.ucdavis.edu/good-food/recipes/healthy-snacks-covid-19.html
 
 workout routines- 
-	arms- pushups, hand stands
-	legs- squats, burpees, wall-sits
-	core- plank, situps, crunches
+	arms- https://www.workout-generator.com/arm-workout.html
+	legs- https://www.workout-generator.com/leg-workout.html
+	core- https://www.workout-generator.com/ab-workout.html
 
 netflix-
 	shows- 
