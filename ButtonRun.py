@@ -6,7 +6,8 @@ import random
 class MyGUI:
     def __init__(self):
         self.main_window = tkinter.Tk()
-        self.button1 = tkinter.Button(self.main_window,text='Click Here To Start Your Quarantine Adventure!',command=self.Category)
+        self.main_window.attributes('-fullscreen', True)
+        self.button1 = tkinter.Button(self.main_window,text='Click Here To Start Your Quarantine Adventure!',command=self.Category, height =15)
         self.button1.pack()
         tkinter.mainloop()
         
@@ -447,5 +448,4 @@ class MyGUI:
         self.button_core.pack()
 
 
-        
 gui = MyGUI()
