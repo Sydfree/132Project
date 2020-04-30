@@ -6,11 +6,21 @@ import random
 class MyGUI:
     def __init__(self):
         self.main_window = tkinter.Tk()
-        self.main_window.attributes('-fullscreen', True)
+
+        self.fullScreenState = False 
+        self.main_window.attributes('-fullscreen', self.fullScreenState)
+        self.main_window.bind("<Escape>", self.quitFullScreen)
+        self.w, self.h = self.main_window.winfo_screenwidth(), self.main_window.winfo_screenheight()
+        self.main_window.geometry("%dx%d" % (self.w, self.h))        
+
         self.button1 = tkinter.Button(self.main_window,text='Click Here To Start Your Quarantine Adventure!',command=self.Category, height =15)
         self.button1.pack()
-        tkinter.mainloop()
-        
+        tkinter.mainloop()%
+
+    def quitFullScreen(self, event):
+        self.fullScreenState = False
+        self.window.attributes("-fullscreen", self.fullScreenState)
+    
     def Category(self):
         self.mini_window = tkinter.Toplevel()
         self.avg_mess = tkinter.Label(self.mini_window,text='What Are You Interested In Doing Today?')
@@ -382,9 +392,6 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button_homework = tkinter.Button(self.mini_window, text='Clicking This Will Maybe Help...', command= lambda:
-        webbrowser.open('https://www.freecollegeschedulemaker.com/'))
-        self.button_homework.pack()
     
     def Chores(self):
         self.mini_window = tkinter.Toplevel()
@@ -393,9 +400,6 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button_homework = tkinter.Button(self.mini_window, text='Clicking This Will Maybe Help...', command= lambda:
-        webbrowser.open(''))
-        self.button_homework.pack()
 
     def Puzzle(self):
         self.mini_window = tkinter.Toplevel()
@@ -404,9 +408,6 @@ class MyGUI:
         self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
-        self.button_homework = tkinter.Button(self.mini_window, text='Clicking This Will Maybe Help...', command= lambda:
-        webbrowser.open(''))
-        self.button_homework.pack()
 
     def WorkoutOptions(self):
         self.mini_window = tkinter.Toplevel()
