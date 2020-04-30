@@ -52,8 +52,8 @@ music-
 	lo-fi- 
 		kudasai- 
 		slipfunc- 
-		powfu- 
-		the girl next door-
+		powfu- https://www.youtube.com/results?search_query=powfu
+		the girl next door- https://www.youtube.com/results?search_query=the+girl+next+door+lofi
 
 games- 
 	Jack Box

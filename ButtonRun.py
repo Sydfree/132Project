@@ -311,7 +311,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_lofi = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('http://www.facebook.com'))
+        webbrowser.open('https://www.youtube.com/results?search_query=the+girl+next+door+lofi'))
         self.button_lofi.pack()
     
 
