@@ -14,7 +14,7 @@ class MyGUI:
 
         self.button1 = tkinter.Button(self.main_window,text='Click Here To Start Your Quarantine Adventure!',command=self.Category, height = 15)
         self.button1.pack()
-        self.mini_window.configure(bg = 'red')
+        self.main_window.configure(bg = 'red')
         tkinter.mainloop()
 
 
@@ -30,6 +30,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.mini_window.configure(bg = 'red')
 
         self.avg_mess = tkinter.Label(self.mini_window,text='What Are You Interested In Doing Today?')
         self.avg_result_var = tkinter.StringVar()
@@ -58,6 +59,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Show or Movie?')
         self.avg_result_var = tkinter.StringVar()
@@ -77,6 +79,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='What Genre Are We Talking?')
         self.avg_result_var = tkinter.StringVar()
@@ -102,6 +105,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -120,6 +124,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -138,6 +143,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -156,6 +162,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -174,6 +181,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -193,6 +201,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='What Genre Are We Talking?')
         self.avg_result_var = tkinter.StringVar()
@@ -220,6 +229,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -238,6 +248,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -256,6 +267,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -274,6 +286,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -292,6 +305,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -310,6 +324,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -328,6 +343,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='What Genre Are We Talking?')
         self.avg_result_var = tkinter.StringVar()
@@ -353,6 +369,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -372,6 +389,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -391,6 +409,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -409,6 +428,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
     
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -428,6 +448,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -447,6 +468,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='What Kind of Games Are We Talking?')
         self.avg_result_var = tkinter.StringVar()
@@ -473,6 +495,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='What Are You Interested In Cooking Today?')
         self.avg_result_var = tkinter.StringVar()
@@ -496,6 +519,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -514,6 +538,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -532,6 +557,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -551,6 +577,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -569,6 +596,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='What Are You Interested In Doing Today?')
         self.avg_result_var = tkinter.StringVar()
@@ -590,6 +618,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Yeah, go do that....')
         self.avg_result_var = tkinter.StringVar()
@@ -608,6 +637,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='You Do Not Want Everyone Yelling At You. Go, But Come Back When You Finish!')
         self.avg_result_var = tkinter.StringVar()
@@ -626,6 +656,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Go Do Some Brain Exercises!!')
         self.avg_result_var = tkinter.StringVar()
@@ -644,6 +675,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='What Are You Interested In Working Today?')
         self.avg_result_var = tkinter.StringVar()
@@ -666,6 +698,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -683,6 +716,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
@@ -700,6 +734,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.main_window.configure(bg = 'red')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Check Out...')
         self.avg_result_var = tkinter.StringVar()
