@@ -124,7 +124,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
-        self.mini_window.configure(bg = '#Black')
+        self.mini_window.configure(bg = 'Black')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='Good Choice! You Should Watch...')
         self.avg_result_var = tkinter.StringVar()
@@ -643,7 +643,7 @@ class MyGUI:
         self.mini_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
         self.mini_window.geometry("%dx%d" % (self.w, self.h))
-        self.mini_window.configure(bg = 'red')
+        self.mini_window.configure(bg = 'silver')
         
         self.avg_mess = tkinter.Label(self.mini_window,text='You Do Not Want Everyone Yelling At You. Go, But Come Back When You Finish!')
         self.avg_result_var = tkinter.StringVar()
