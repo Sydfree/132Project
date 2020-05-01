@@ -378,7 +378,7 @@ class MyGUI:
         self.avg_result_display.pack()
 
         self.button_country = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('https://www.youtube.com/results?search_query=Luke+Combs'), height = 5, width = 15)
+        webbrowser.open('https://www.youtube.com/results?search_query=Luke+Combs'), height = 5, width = 25)
         self.button_country.pack()
         
 
@@ -398,7 +398,7 @@ class MyGUI:
         self.avg_result_display.pack()
 
         self.button_rock = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('https://www.youtube.com/results?search_query=Paramore'), height = 5, width = 15)
+        webbrowser.open('https://www.youtube.com/results?search_query=Paramore'), height = 5, width = 25)
         self.button_rock.pack()
     
 
@@ -418,7 +418,7 @@ class MyGUI:
         self.avg_result_display.pack()
 
         self.button_rap = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('https://www.youtube.com/results?search_query=Tyler+the+Creator'), height = 5, width = 15)
+        webbrowser.open('https://www.youtube.com/results?search_query=Tyler+the+Creator'), height = 5, width = 25)
         self.button_rap.pack()
 
     def RandBOptions(self):
@@ -437,7 +437,7 @@ class MyGUI:
         self.avg_result_display.pack()
 
         self.button_randb = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('https://www.youtube.com/results?search_query=Michael+Jackson'), height = 5, width = 15)
+        webbrowser.open('https://www.youtube.com/results?search_query=Michael+Jackson'), height = 5, width = 25)
         self.button_randb.pack()
         
 
@@ -457,7 +457,7 @@ class MyGUI:
         self.avg_result_display.pack()
 
         self.button_lofi = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        webbrowser.open('https://www.youtube.com/results?search_query=slipfunc'), height = 5, width = 15)
+        webbrowser.open('https://www.youtube.com/results?search_query=slipfunc'), height = 5, width = 25)
         self.button_lofi.pack()
     
 
@@ -661,7 +661,7 @@ class MyGUI:
         self.avg_result_display.pack()
 
         self.button_homework = tkinter.Button(self.mini_window, text='You Should Work On...', command= lambda:
-        webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 15)
+        webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 25)
         self.button_homework.pack()
     
     def Chores(self):
