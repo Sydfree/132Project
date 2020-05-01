@@ -477,19 +477,47 @@ class MyGUI:
         self.avg_result_display.pack()
 
         self.button26 = tkinter.Button(self.mini_window,text='Console Games?',command=self.ConsoleOptions, height = 5, width = 15)
-        self.button26.pack
+        self.button26.pack()
         self.button27 = tkinter.Button(self.mini_window,text='PC Games?',command=self.PCOptions, height = 5, width = 15)
-        self.button27.pack
+        self.button27.pack()
         
 
     def ConsoleOptions(self):
-        self.button_ConsoleBstGames = tkinter.Button(self.mini_window, text='You Should See What The Best Game Is!...', command= lambda:
+        self.mini_window = tkinter.Toplevel()
+
+        self.fullScreenState = False 
+        self.mini_window.attributes('-fullscreen', self.fullScreenState)
+        self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
+        self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.mini_window.configure(bg = 'purple')
+        
+        self.avg_mess = tkinter.Label(self.mini_window,text='What Kind of Games Are We Talking?')
+        self.avg_result_var = tkinter.StringVar()
+        self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
+        self.avg_mess.pack(fill="both")
+        self.avg_result_display.pack()
+        
+        self.button_ConsoleOptions = tkinter.Button(self.mini_window, text='The Best Game Is!...', command= lambda:
         webbrowser.open('https://www.ranker.com/app/search.htm?q=Best%20Console%20Video%20Games'), height = 5, width = 15)
-        self.button_ConsoleBestGames.pack()
+        self.button_ConsoleOptions.pack()
         
 
     def PCOptions(self):
-        self.button_PCBstGames = tkinter.Button(self.mini_window, text='You Should See What The Best Game Is!...', command= lambda:
+        self.mini_window = tkinter.Toplevel()
+
+        self.fullScreenState = False 
+        self.mini_window.attributes('-fullscreen', self.fullScreenState)
+        self.w, self.h = self.mini_window.winfo_screenwidth(), self.mini_window.winfo_screenheight()
+        self.mini_window.geometry("%dx%d" % (self.w, self.h))
+        self.mini_window.configure(bg = 'purple')
+        
+        self.avg_mess = tkinter.Label(self.mini_window,text='What Kind of Games Are We Talking?')
+        self.avg_result_var = tkinter.StringVar()
+        self.avg_result_display = tkinter.Label(self.mini_window,textvariable=self.avg_result_var)
+        self.avg_mess.pack(fill="both")
+        self.avg_result_display.pack()
+        
+        self.button_PCBstGames = tkinter.Button(self.mini_window, text='The Best Game Is!...', command= lambda:
         webbrowser.open('https://www.pcgamer.com/search/?searchTerm=best+pc+games'), height = 5, width = 15)
         self.button_PCBestGames.pack()
 
