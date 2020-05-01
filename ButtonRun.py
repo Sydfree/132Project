@@ -740,7 +740,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_arms = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
-        webbrowser.open('https://www.workout-generator.com/arm-workout.html'), height = 5, width = 15)
+        webbrowser.open('https://www.workout-generator.com/arm-workout.html'), height = 5, width = 25)
         self.button_arms.pack()
 
     def LegWorkouts(self):
@@ -758,7 +758,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_legs = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
-        webbrowser.open('https://www.workout-generator.com/leg-workout.html'), height = 5, width = 15)
+        webbrowser.open('https://www.workout-generator.com/leg-workout.html'), height = 5, width = 25)
         self.button_legs.pack()
 
     def CoreWorkouts(self):
@@ -776,7 +776,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         self.button_core = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
-        webbrowser.open('https://www.workout-generator.com/ab-workout.html'), height = 5, width = 15)
+        webbrowser.open('https://www.workout-generator.com/ab-workout.html'), height = 5, width = 25)
         self.button_core.pack()
 
 
