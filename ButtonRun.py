@@ -517,7 +517,7 @@ class MyGUI:
         self.avg_mess.pack(fill="both")
         self.avg_result_display.pack()
         
-        self.button_PCBstGames = tkinter.Button(self.mini_window, text='The Best Game Is!...', command= lambda:
+        self.button_PCBestGames = tkinter.Button(self.mini_window, text='The Best Game Is!...', command= lambda:
         webbrowser.open('https://www.pcgamer.com/search/?searchTerm=best+pc+games'), height = 5, width = 15)
         self.button_PCBestGames.pack()
 
