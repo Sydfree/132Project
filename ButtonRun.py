@@ -10,10 +10,11 @@ class MyGUI:
         self.fullScreenState = False 
         self.main_window.attributes('-fullscreen', self.fullScreenState)
         self.w, self.h = self.main_window.winfo_screenwidth(), self.main_window.winfo_screenheight()
-        self.main_window.geometry("%dx%d" % (self.w, self.h))        
+        self.main_window.geometry("%dx%d" % (self.w, self.h))
 
         self.button1 = tkinter.Button(self.main_window,text='Click Here To Start Your Quarantine Adventure!',command=self.Category, height =15)
         self.button1.pack()
+        self.mini_window.configure(bg = 'red')
         tkinter.mainloop()
 
 
