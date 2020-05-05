@@ -482,11 +482,11 @@ class WorkoutOptions(tkinter.Frame):
         label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
         label.pack(pady=10,padx=10) 
 
-        Arms = tkinter.Button(self, text='Lunch?',command=lambda: controller.show_frame(Arms))
+        Arms = tkinter.Button(self, text='Arms?',command=lambda: controller.show_frame(Arms))
         Arms.pack()
-        Legs = tkinter.Button(self, text='Dinner?',command=lambda: controller.show_frame(Leg))
+        Legs = tkinter.Button(self, text='Legs?',command=lambda: controller.show_frame(Leg))
         Legs.pack()
-        Core = tkinter.Button(self, text='Snack?',command=lambda: controller.show_frame(Core))
+        Core = tkinter.Button(self, text='Core?',command=lambda: controller.show_frame(Core))
         Core.pack()
         Return30 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return30.pack()       
@@ -495,7 +495,7 @@ class WorkoutOptions(tkinter.Frame):
 class Arms(tkinter.Frame):
   def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Good Choice?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
         
         #self.button_arms = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
@@ -507,7 +507,7 @@ class Arms(tkinter.Frame):
 class Leg(tkinter.Frame):
   def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Good Choice", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
         
         #self.button_legs = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
@@ -519,7 +519,7 @@ class Leg(tkinter.Frame):
 class Core(tkinter.Frame):
   def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Good Choice", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
         
         #self.button_core = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
