@@ -21,7 +21,7 @@ class MyGUI(tkinter.Tk):
 
         for F in (StartPage, Category, NetflixOptions, MovieOptions, ActionMovie, RomanceMovie, HorrorMovie, ComedyMovie, DocumentaryMovie, ShowOptions, RealityShow,
                   ActionShow, RomanceShow, HorrorShow, ComedyShow, DocumentaryShow, MusicOptions, Country, Rock, Rap, RandB, LoFi, GamingOptions, CookingOptions,
-                  Breakfast, Lunch, Dinner, Snack, Productivity, Homework, Chores, Puzzle, Workout, Arms, Leg, Core):
+                  Breakfast, Lunch, Dinner, Snack, ProductivityOptions, Homework, Chores, Puzzle, WorkoutOptions, Arms, Leg, Core):
 
             frame = F(container, self)
 
@@ -67,9 +67,9 @@ class Category(tkinter.Frame):
         Gaming.pack()
         Cooking = tkinter.Button(self, text='Cooking?',command=lambda: controller.show_frame(CookingOptions))
         Cooking.pack()
-        Productivity = tkinter.Button(self, text='Productivity?',command=lambda: controller.show_frame(Productivity))
+        Productivity = tkinter.Button(self, text='Productivity?',command=lambda: controller.show_frame(ProductivityOptions))
         Productivity.pack()
-        Workout = tkinter.Button(self, text='Workout?',command=lambda: controller.show_frame(Workout))
+        Workout = tkinter.Button(self, text='Workout?',command=lambda: controller.show_frame(WorkoutOptions))
         Workout.pack()
         
 
@@ -425,7 +425,7 @@ class Snack(tkinter.Frame):
         Return25 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
         Return25.pack()
 
-class Productivity(tkinter.Frame):
+class ProductivityOptions(tkinter.Frame):
    def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
         label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today", font=LARGE_FONT)
@@ -449,7 +449,7 @@ class Homework(tkinter.Frame):
         #self.button_homework = tkinter.Button(self.mini_window, text='You Should Work On...', command= lambda:
         #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 25)
         #self.button_homework.pack()
-        Return27 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Productivity))
+        Return27 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return27.pack()
     
 class Chores(tkinter.Frame):
@@ -461,7 +461,7 @@ class Chores(tkinter.Frame):
         #self.button_chores = tkinter.Button(self.mini_window, text='You Should Clean...', command= lambda:
         #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 15)
         #self.button_chores.pack()
-        Return28 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Productivity))
+        Return28 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return28.pack()
 
 class Puzzle(tkinter.Frame):
@@ -473,10 +473,10 @@ class Puzzle(tkinter.Frame):
         #self.button_puzzle = tkinter.Button(self.mini_window, text='You Should Try...', command= lambda:
         #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 15)
         #self.button_puzzle.pack()
-        Return29 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Productivity))
+        Return29 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return29.pack()
 
-class Workout(tkinter.Frame):
+class WorkoutOptions(tkinter.Frame):
   def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
         label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
@@ -501,7 +501,7 @@ class Arms(tkinter.Frame):
         #self.button_arms = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
         #webbrowser.open('https://www.workout-generator.com/arm-workout.html'), height = 5, width = 25)
         #self.button_arms.pack()
-        Return30 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Workout))
+        Return30 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
         Return30.pack()
 
 class Leg(tkinter.Frame):
@@ -513,7 +513,7 @@ class Leg(tkinter.Frame):
         #self.button_legs = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
         #webbrowser.open('https://www.workout-generator.com/leg-workout.html'), height = 5, width = 25)
         #self.button_legs.pack()
-        Return31 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Workout))
+        Return31 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
         Return31.pack()
 
 class Core(tkinter.Frame):
@@ -525,7 +525,7 @@ class Core(tkinter.Frame):
         #self.button_core = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
         #webbrowser.open('https://www.workout-generator.com/ab-workout.html'), height = 5, width = 25)
         #self.button_core.pack()
-        Return32 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Workout))
+        Return32 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
         Return32.pack()
 
 
