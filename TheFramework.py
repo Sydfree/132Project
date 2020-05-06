@@ -97,7 +97,8 @@ class MovieOptions(tkinter.Frame):
         label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        ActionMovie = tkinter.Button(self, text='Action?',command=lambda: webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'))
+        ActionMovie = tkinter.Button(self, text='Action?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'),\
+                                                                          ActionMovie.destroy])
         ActionMovie.pack()
 
         RomanceMovie = tkinter.Button(self, text='Romance?',command=lambda: webbrowser.open('https://www.netflix.com/browse/genre/8883?bc=34399'))
