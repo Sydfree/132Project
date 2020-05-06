@@ -97,8 +97,7 @@ class MovieOptions(tkinter.Frame):
         label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        ActionMovie = tkinter.Button(self, text='Action?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'),\
-                                                                          ActionMovie.destroy])
+        ActionMovie = tkinter.Button(self, text='Action?',command=lambda: webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'))
         ActionMovie.pack()
 
         RomanceMovie = tkinter.Button(self, text='Romance?',command=lambda: webbrowser.open('https://www.netflix.com/browse/genre/8883?bc=34399'))
@@ -177,117 +176,33 @@ class CookingOptions(tkinter.Frame):
         label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
         
-        Breakfast = tkinter.Button(self, text='Breakfast?',command=lambda: controller.show_frame(Breakfast))
+        Breakfast = tkinter.Button(self, text='Breakfast?',command=lambda: webbrowser.open('https://www.foodnetwork.com/recipes/photos/our-best-breakfast-recipes'))
         Breakfast.pack()
-        Lunch = tkinter.Button(self, text='Lunch?',command=lambda: controller.show_frame(Lunch))
+        Lunch = tkinter.Button(self, text='Lunch?',command=lambda: webbrowser.open('https://www.foodnetwork.com/search/lunch-/COURSE_DFACET:0/tag%23meal-type:lunch'))
         Lunch.pack()
-        Dinner = tkinter.Button(self, text='Dinner?',command=lambda: controller.show_frame(Dinner))
+        Dinner = tkinter.Button(self, text='Dinner?',command=lambda: webbrowser.open('https://www.foodnetwork.com/healthy/packages/healthy-every-week/healthy-mains/healthy-weeknight-dinners'))
         Dinner.pack()
-        Snack = tkinter.Button(self, text='Snack?',command=lambda: controller.show_frame(Snack))
+        Snack = tkinter.Button(self, text='Snack?',command=lambda: webbrowser.open('https://www.foodnetwork.com/search/snack-/COURSE_DFACET:0/tag%23meal-type:snack'))
         Snack.pack()
         Return22 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
-        Return22.pack() 
+        Return22.pack()
 
-class Breakfast(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_breakfast = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        #webbrowser.open('https://www.scoopwhoop.com/food/16-healthy-3-ingredient-breakfast-recipes-to-try-out-while-in-quarantine/'), height = 5, width = 15)
-        #self.button_breakfast.pack()
-        Return22 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
-        Return22.pack() 
-
-class Lunch(tkinter.Frame):
-   def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_lunch = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        #webbrowser.open('https://www.tasteofhome.com/collection/creative-quarantine-meals/'), height = 5, width = 15)
-        #self.button_lunch.pack()
-        Return23 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
-        Return23.pack()
-
-class Dinner(tkinter.Frame):
-   def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_dinner = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        #webbrowser.open('https://www.eatthis.com/quarantine-recipes/'), height = 5, width = 15)
-        #self.button_dinner.pack()
-        Return24 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
-        Return24.pack()
         
-
-class Snack(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-
-        #self.button_snack = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
-        #webbrowser.open('https://health.ucdavis.edu/good-food/recipes/healthy-snacks-covid-19.html'), height = 5, width = 15)
-        #self.button_snack.pack()
-        Return25 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
-        Return25.pack()
-
 class ProductivityOptions(tkinter.Frame):
    def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
         label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today", font=LARGE_FONT)
         label.pack(pady=10,padx=10)  
 
-        Homework = tkinter.Button(self, text='Homework?',command=lambda: controller.show_frame(Homework))
+        Homework = tkinter.Button(self, text='School? Stay Organized!',command=lambda: webbrowser.open('https://www.amazon.com/slp/planners-for-college-students/k6f77xpfpfohtp9'))
         Homework.pack()
-        Chores = tkinter.Button(self, text='Chores?',command=lambda: controller.show_frame(Chores))
+        Chores = tkinter.Button(self, text='Chores?',command=lambda: webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
         Chores.pack()
-        Puzzles = tkinter.Button(self, text='Puzzle?',command=lambda: controller.show_frame(Puzzles))
+        Puzzles = tkinter.Button(self, text='Puzzle?',command=lambda: webbrowser.open('https://thejigsawpuzzles.com/'))
         Puzzles.pack()
         Return26 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return26.pack()
 
-class Homework(tkinter.Frame):
-   def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_homework = tkinter.Button(self.mini_window, text='You Should Work On...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 25)
-        #self.button_homework.pack()
-        Return27 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
-        Return27.pack()
-    
-class Chores(tkinter.Frame):
-   def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_chores = tkinter.Button(self.mini_window, text='You Should Clean...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 15)
-        #self.button_chores.pack()
-        Return28 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
-        Return28.pack()
-
-class Puzzle(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_puzzle = tkinter.Button(self.mini_window, text='You Should Try...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 15)
-        #self.button_puzzle.pack()
-        Return29 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
-        Return29.pack()
 
 class WorkoutOptions(tkinter.Frame):
   def __init__(self, parent, controller):
@@ -295,51 +210,14 @@ class WorkoutOptions(tkinter.Frame):
         label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
         label.pack(pady=10,padx=10) 
 
-        Arms = tkinter.Button(self, text='Arms?',command=lambda: controller.show_frame(Arms))
+        Arms = tkinter.Button(self, text='Arms?',command=lambda: webbrowser.open('https://www.workout-generator.com/arm-workout.html'))
         Arms.pack()
-        Legs = tkinter.Button(self, text='Legs?',command=lambda: controller.show_frame(Leg))
+        Legs = tkinter.Button(self, text='Legs?',command=lambda: webbrowser.open('https://www.workout-generator.com/leg-workout.html'))
         Legs.pack()
-        Core = tkinter.Button(self, text='Core?',command=lambda: controller.show_frame(Core))
+        Core = tkinter.Button(self, text='Core?',command=lambda: webbrowser.open('https://www.workout-generator.com/ab-workout.html'))
         Core.pack()
         Return30 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return30.pack()       
-
-
-class Arms(tkinter.Frame):
-  def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice?", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-        
-        #self.button_arms = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
-        #webbrowser.open('https://www.workout-generator.com/arm-workout.html'), height = 5, width = 25)
-        #self.button_arms.pack()
-        Return30 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
-        Return30.pack()
-
-class Leg(tkinter.Frame):
-  def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-        
-        #self.button_legs = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
-        #webbrowser.open('https://www.workout-generator.com/leg-workout.html'), height = 5, width = 25)
-        #self.button_legs.pack()
-        Return31 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
-        Return31.pack()
-
-class Core(tkinter.Frame):
-  def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-        
-        #self.button_core = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
-        #webbrowser.open('https://www.workout-generator.com/ab-workout.html'), height = 5, width = 25)
-        #self.button_core.pack()
-        Return32 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
-        Return32.pack()
 
 
 gui = MyGUI()
