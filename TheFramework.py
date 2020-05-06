@@ -19,8 +19,7 @@ class MyGUI(tkinter.Tk):
 
         self.frames = {}
 
-        for F in (StartPage, Category, NetflixOptions, MovieOptions, ShowOptions, MusicOptions, GamingOptions, CookingOptions,
-                  Breakfast, Lunch, Dinner, Snack, ProductivityOptions, Homework, Chores, Puzzle, WorkoutOptions, Arms, Leg, Core):
+        for F in (StartPage, Category, NetflixOptions, MovieOptions, ShowOptions, MusicOptions, GamingOptions, CookingOptions, ProductivityOptions, WorkoutOptions):
 
             frame = F(container, self)
 
