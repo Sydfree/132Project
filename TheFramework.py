@@ -59,7 +59,7 @@ class Category(tkinter.Frame):
         label = tkinter.Label(self, text="What Are You Interested In Doing Today?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        Netflix = tkinter.Button(self, text="Netflix", command=lambda: controller.show_frame(NetflixOptions))
+        Netflix = tkinter.Button(self, text="Netflix?", command=lambda: controller.show_frame(NetflixOptions))
         Netflix.pack()
         Music = tkinter.Button(self, text="Music?", command=lambda: controller.show_frame(MusicOptions))
         Music.pack()
@@ -85,27 +85,34 @@ class NetflixOptions(tkinter.Frame):
 
         Movie = tkinter.Button(self, text='Movies?',command=lambda: controller.show_frame(MovieOptions))
         Movie.pack()
+
         Show = tkinter.Button(self, text='Show?',command=lambda: controller.show_frame(ShowOptions))
         Show.pack()
+
         Return1 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return1.pack()
 
 class MovieOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        ActionMovie = tkinter.Button(self, text='Action?',command=lambda: controller.show_frame(ActionMovie))
+        ActionMovie = tkinter.Button(self, text='Action?',command=lambda: webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'))
         ActionMovie.pack()
+
         RomanceMovie = tkinter.Button(self, text='Romance?',command=lambda: controller.show_frame(RomanceMovie))
         RomanceMovie.pack()
+
         HorrorMovie = tkinter.Button(self, text='Horror?',command=lambda: controller.show_frame(HorrorMovie))
         HorrorMovie.pack()
+
         ComedyMovie = tkinter.Button(self, text='Comedy?',command=lambda: controller.show_frame(ComedyMovie))
         ComedyMovie.pack()
+
         DocumentaryMovie = tkinter.Button(self, text='Documentary?',command=lambda: controller.show_frame(DocumentaryMovie))
         DocumentaryMovie.pack()
+
         Return2 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(NetflixOptions))
         Return2.pack()
         
@@ -115,9 +122,10 @@ class ActionMovie(tkinter.Frame):
         label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        #self.button_action = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
-        #webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'), height = 5, width = 15)
-        #self.button_action.pack()
+##        self.button_action = tkinter.Button(self.mini_window, text='You Should Watch...', command= lambda:
+##        webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'))
+##        self.button_action.pack()
+
         Return3 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(MovieOptions))
         Return3.pack() 
 
