@@ -19,7 +19,7 @@ class MyGUI(tkinter.Tk):
 
         self.frames = {}
 
-        for F in (StartPage, Category, NetflixOptions, MovieOptions, MusicOptions, Country, Rock, Rap, RandB, LoFi, GamingOptions, CookingOptions,
+        for F in (StartPage, Category, NetflixOptions, MovieOptions, ShowOptions, MusicOptions, GamingOptions, CookingOptions,
                   Breakfast, Lunch, Dinner, Snack, ProductivityOptions, Homework, Chores, Puzzle, WorkoutOptions, Arms, Leg, Core):
 
             frame = F(container, self)
@@ -158,69 +158,6 @@ class MusicOptions(tkinter.Frame):
         Return15 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return15.pack()
 
-class Country(tkinter.Frame):
-   def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_country = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/results?search_query=Luke+Combs'), height = 5, width = 25)
-        #self.button_country.pack()
-        Return16 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(MusicOptions))
-        Return16.pack()
-        
-
-class Rock(tkinter.Frame):
-   def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-        
-        #self.button_rock = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/results?search_query=Paramore'), height = 5, width = 25)
-        #self.button_rock.pack()
-        Return17 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(MusicOptions))
-        Return17.pack()
-    
-
-class Rap(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_rap = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/results?search_query=Tyler+the+Creator'), height = 5, width = 25)
-        #self.button_rap.pack()
-        Return18 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(MusicOptions))
-        Return18.pack()
-
-class RandB(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_randb = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/results?search_query=Michael+Jackson'), height = 5, width = 25)
-        #self.button_randb.pack()
-        Return19 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(MusicOptions))
-        Return19.pack()
-        
-
-class LoFi(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Good Choice!", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
-
-        #self.button_lofi = tkinter.Button(self.mini_window, text='You Should Listen To...', command= lambda:
-        #webbrowser.open('https://www.youtube.com/results?search_query=slipfunc'), height = 5, width = 25)
-        #self.button_lofi.pack()
-        Return20 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(MusicOptions))
-        Return20.pack()
-    
 
 class GamingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
