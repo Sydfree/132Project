@@ -164,8 +164,22 @@ class GamingOptions(tkinter.Frame):
         label = tkinter.Label(self, text="I saw that we can load games using tkinter. reind me to talk about this. -Aidan ", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
+        NumPuzzle = tkinter.Button(self, text="Sliding Number Puzzle", command=lambda: controller.show_frame(NumPuzzle))
+        NumPuzzle.pack()
+        Sudoku = tkinter.Button(self, text="Sudoku", command=lambda: controller.show_frame(Sudoku))
+        Sudoku.pack()
         Return21 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return21.pack()
+
+
+class NumPuzzle(tkinter.Frame):
+    def __init__(self, parent, controller):
+        tkinter.Frame.__init__(self, parent)
+
+class Sudoku(tkinter.Frame):
+    def __init__(self, parent, controller):
+        tkinter.Frame.__init__(self, parent)
+        
         
 
     
