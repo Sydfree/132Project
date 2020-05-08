@@ -43,14 +43,18 @@ class StartPage(tkinter.Frame):
 
         Categories = tkinter.Button(self, text="Quarantine Adventure!", command=lambda: controller.show_frame(Category))
         Categories.pack()
+
+        self.fullScreenState = False
+        controller.attributes("-fullscreen", self.fullScreenState)
+
+        self.w, self.h = controller.winfo_screenwidth(), controller.winfo_screenheight()
+        controller.geometry("%dx%d" % (self.w, self.h))
         
 
     def quitFullScreen(self, event):
         self.fullScreenState = False
         self.window.attributes("-fullscreen", self.fullScreenState)
        
-
-    
 class Category(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
