@@ -8,7 +8,7 @@ LARGE_FONT= ("Verdana", 12)
 class MyGUI(tkinter.Tk):
     
     def __init__(self, *args, **kwargs):
-        
+
         tkinter.Tk.__init__(self, *args, **kwargs)
         container = tkinter.Frame(self)
 
@@ -70,6 +70,9 @@ class Category(tkinter.Frame):
         Productivity.pack()
         Workout = tkinter.Button(self, text='Workout?',command=lambda: controller.show_frame(WorkoutOptions))
         Workout.pack()
+
+        Quit = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit.pack()
         
 
 
@@ -77,6 +80,7 @@ class Category(tkinter.Frame):
 class NetflixOptions(tkinter.Frame):
 
     def __init__(self, parent, controller):
+        
         tkinter.Frame.__init__(self, parent)
         label = tkinter.Label(self, text="Are You Feeling A Movie or Some Shows?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
@@ -91,14 +95,18 @@ class NetflixOptions(tkinter.Frame):
         Return1 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return1.pack()
 
+        Quit1 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit1.pack()
+
 class MovieOptions(tkinter.Frame):
+        
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
         label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        ActionMovie = tkinter.Button(self, text='Action?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'),\
-                                                                          ActionMovie.destroy])
+        ActionMovie = tkinter.Button(self, text='Action?', command=lambda: [webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'), \
+                                                                            controller.destroy])
         ActionMovie.pack()
 
         RomanceMovie = tkinter.Button(self, text='Romance?',command=lambda: webbrowser.open('https://www.netflix.com/browse/genre/8883?bc=34399'))
@@ -116,6 +124,8 @@ class MovieOptions(tkinter.Frame):
         Return2 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(NetflixOptions))
         Return2.pack()
 
+        Quit2 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit2.pack()
 
 class ShowOptions(tkinter.Frame):
     def __init__(self, parent, controller):
@@ -135,8 +145,12 @@ class ShowOptions(tkinter.Frame):
         ComedyShow.pack()
         DocumentaryMovie = tkinter.Button(self, text='Documentary?',command=lambda: webbrowser.open('https://www.netflix.com/browse/genre/10105?bc=83'))
         DocumentaryMovie.pack()
+
         Return8 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(NetflixOptions))
-        Return8.pack()        
+        Return8.pack()
+
+        Quit3 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit3.pack()
 
 
 class MusicOptions(tkinter.Frame):
@@ -156,8 +170,12 @@ class MusicOptions(tkinter.Frame):
         RandB.pack()
         LoFi = tkinter.Button(self, text='Lo-Fi?',command=lambda: webbrowser.open('https://open.spotify.com/playlist/0TCxLrp0tEZrkGkaWhnFrE'))
         LoFi.pack()
+
         Return15 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return15.pack()
+
+        Quit4 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit4.pack()
 
 
 class GamingOptions(tkinter.Frame):
@@ -185,8 +203,12 @@ class CookingOptions(tkinter.Frame):
         Dinner.pack()
         Snack = tkinter.Button(self, text='Snack?',command=lambda: controller.show_frame(Snack))
         Snack.pack()
+
         Return22 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
-        Return22.pack() 
+        Return22.pack()
+
+        Quit5 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit5.pack()
 
 class Breakfast(tkinter.Frame):
     def __init__(self, parent, controller):
@@ -209,8 +231,12 @@ class Lunch(tkinter.Frame):
         #self.button_lunch = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
         #webbrowser.open('https://www.tasteofhome.com/collection/creative-quarantine-meals/'), height = 5, width = 15)
         #self.button_lunch.pack()
+
         Return23 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
         Return23.pack()
+
+        Quit6 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit6.pack()
 
 class Dinner(tkinter.Frame):
    def __init__(self, parent, controller):
@@ -221,9 +247,12 @@ class Dinner(tkinter.Frame):
         #self.button_dinner = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
         #webbrowser.open('https://www.eatthis.com/quarantine-recipes/'), height = 5, width = 15)
         #self.button_dinner.pack()
+
         Return24 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
         Return24.pack()
-        
+
+        Quit7 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit7.pack()        
 
 class Snack(tkinter.Frame):
     def __init__(self, parent, controller):
@@ -235,8 +264,12 @@ class Snack(tkinter.Frame):
         #self.button_snack = tkinter.Button(self.mini_window, text='You Should Cook...', command= lambda:
         #webbrowser.open('https://health.ucdavis.edu/good-food/recipes/healthy-snacks-covid-19.html'), height = 5, width = 15)
         #self.button_snack.pack()
+
         Return25 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(CookingOptions))
         Return25.pack()
+
+        Quit8 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit8.pack()
 
 class ProductivityOptions(tkinter.Frame):
    def __init__(self, parent, controller):
@@ -250,8 +283,12 @@ class ProductivityOptions(tkinter.Frame):
         Chores.pack()
         Puzzles = tkinter.Button(self, text='Puzzle?',command=lambda: controller.show_frame(Puzzles))
         Puzzles.pack()
+
         Return26 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return26.pack()
+
+        Quit9 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit9.pack()
 
 class Homework(tkinter.Frame):
    def __init__(self, parent, controller):
@@ -274,8 +311,12 @@ class Chores(tkinter.Frame):
         #self.button_chores = tkinter.Button(self.mini_window, text='You Should Clean...', command= lambda:
         #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 15)
         #self.button_chores.pack()
+
         Return28 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return28.pack()
+
+        Quit10 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit10.pack()
 
 class Puzzle(tkinter.Frame):
     def __init__(self, parent, controller):
@@ -286,8 +327,12 @@ class Puzzle(tkinter.Frame):
         #self.button_puzzle = tkinter.Button(self.mini_window, text='You Should Try...', command= lambda:
         #webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), height = 5, width = 15)
         #self.button_puzzle.pack()
+
         Return29 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return29.pack()
+
+        Quit11 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit11.pack()
 
 class WorkoutOptions(tkinter.Frame):
   def __init__(self, parent, controller):
@@ -301,8 +346,12 @@ class WorkoutOptions(tkinter.Frame):
         Legs.pack()
         Core = tkinter.Button(self, text='Core?',command=lambda: controller.show_frame(Core))
         Core.pack()
+
         Return30 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
-        Return30.pack()       
+        Return30.pack()
+
+        Quit12 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit12.pack()
 
 
 class Arms(tkinter.Frame):
@@ -314,8 +363,12 @@ class Arms(tkinter.Frame):
         #self.button_arms = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
         #webbrowser.open('https://www.workout-generator.com/arm-workout.html'), height = 5, width = 25)
         #self.button_arms.pack()
+
         Return30 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
         Return30.pack()
+
+        Quit13 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit13.pack()
 
 class Leg(tkinter.Frame):
   def __init__(self, parent, controller):
@@ -326,8 +379,12 @@ class Leg(tkinter.Frame):
         #self.button_legs = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
         #webbrowser.open('https://www.workout-generator.com/leg-workout.html'), height = 5, width = 25)
         #self.button_legs.pack()
+
         Return31 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
         Return31.pack()
+
+        Quit14 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit14.pack()
 
 class Core(tkinter.Frame):
   def __init__(self, parent, controller):
@@ -338,8 +395,12 @@ class Core(tkinter.Frame):
         #self.button_core = tkinter.Button(self.mini_window, text='You Should Do This Workout...', command= lambda:
         #webbrowser.open('https://www.workout-generator.com/ab-workout.html'), height = 5, width = 25)
         #self.button_core.pack()
+
         Return32 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(WorkoutOptions))
         Return32.pack()
 
+        Quit15 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit15.pack()
+        
 
 gui = MyGUI()
