@@ -20,7 +20,8 @@ class MyGUI(tkinter.Tk):
 
         self.frames = {}
 
-        for F in (StartPage, Category, NetflixOptions, MovieOptions, ShowOptions, MusicOptions, GamingOptions, CookingOptions, ProductivityOptions, WorkoutOptions):
+        for F in (StartPage, Category, NetflixOptions, MovieOptions, ShowOptions, MusicOptions, GamingOptions, CookingOptions, ProductivityOptions,
+                  WorkoutOptions, Puzzles):
 
             frame = F(container, self)
 
@@ -223,32 +224,24 @@ class MusicOptions(tkinter.Frame):
 class GamingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="I saw that we can load games using tkinter. reind me to talk about this. -Aidan ", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Broswer Games or Suggest a Console Game?", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
         self.config(bg='purple')
 
-        NumPuzzle = tkinter.Button(self, text="Sliding Number Puzzle", command=lambda: controller.show_frame(NumPuzzle))
-        NumPuzzle.pack()
-
-        Sudoku = tkinter.Button(self, text="Sudoku", command=lambda: controller.show_frame(Sudoku))
-        Sudoku.pack()
+        BrowserGames = tkinter.Button(self, text='Browser Games?',command=lambda:[webbrowser.open('https://www.miniclip.com/games/en/'),
+                                                                  controller.destroy()])
+        BrowserGames.pack()
+        
+        ConsoleGames = tkinter.Button(self, text='Browser Games?',command=lambda:[webbrowser.open('https://apps.quanticfoundry.com/recommendations/gamerprofile/videogame/'),
+                                                                  controller.destroy()])
+        ConsoleGames.pack()
 
         Return6 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return6.pack()
 
         Quit7 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
-        Quit7.pack()
-
-
-class NumPuzzle(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-
-class Sudoku(tkinter.Frame):
-    def __init__(self, parent, controller):
-        tkinter.Frame.__init__(self, parent)
-        
+        Quit7.pack()        
         
 
     
@@ -298,9 +291,34 @@ class ProductivityOptions(tkinter.Frame):
                                                                      controller.destroy()])
         Chores.pack()
 
-        Puzzles = tkinter.Button(self, text='Puzzle?',command=lambda:[webbrowser.open('https://thejigsawpuzzles.com/'),
-                                                                      controller.destroy()])
-        Puzzles.pack()
+        Puzzle = tkinter.Button(self, text='Puzzles?',command=lambda: controller.show_frame(Puzzles))
+        Puzzle.pack()
+
+        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return7.pack()
+
+        Quit8 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit8.pack()
+
+class Puzzles(tkinter.Frame):
+   def __init__(self, parent, controller):
+        tkinter.Frame.__init__(self, parent)
+        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT)
+        label.pack(pady=10,padx=10)
+
+        self.config(bg='green')
+
+        Sudoku = tkinter.Button(self, text='Sudoku?',command=lambda:[webbrowser.open('https://sudoku.com/'),
+                                                                                       controller.destroy()])
+        Sudoku.pack()
+
+        Jigsaw = tkinter.Button(self, text='Jigsaw Puzzle?',command=lambda:[webbrowser.open('https://thejigsawpuzzles.com/'),
+                                                                     controller.destroy()])
+        Jigsaw.pack()
+
+        Nonograms = tkinter.Button(self, text='Nonograms',command=lambda:[webbrowser.open('https://www.puzzle-nonograms.com/'),
+                                                                     controller.destroy()])
+        Nonograms.pack()        
 
         Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
         Return7.pack()
