@@ -2,6 +2,7 @@ import webbrowser
 from tkinter import *
 import tkinter as tkinter
 import random
+from PIL import Image, ImageTk
 
 LARGE_FONT= ("Verdana", 12)
 
@@ -38,12 +39,16 @@ class StartPage(tkinter.Frame):
 
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self,parent)
-        
-        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", font=LARGE_FONT)
+
+        StartPhoto = Image.open('Images/maxresdefault.gif')
+        tk_image = ImageTk.PhotoImage(StartPhoto)
+
+        label = tkinter.Button(self, text="Click Here To Start Your Quarantine Adventure!",
+                              image = tk_image, compound = 'center', font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        Categories = tkinter.Button(self, text="Quarantine Adventure!", command=lambda: controller.show_frame(Category))
-        Categories.pack()
+        #Categories = tkinter.Button(self, text="Quarantine Adventure!", command=lambda: controller.show_frame(Category))
+        #Categories.pack()
 
         self.fullScreenState = False
         controller.attributes("-fullscreen", self.fullScreenState)
@@ -51,7 +56,7 @@ class StartPage(tkinter.Frame):
         self.w, self.h = controller.winfo_screenwidth(), controller.winfo_screenheight()
         controller.geometry("%dx%d" % (self.w, self.h))
 
-        self.config(bg='blue')
+        #self.config(bg='blue')
 
     def quitFullScreen(self, event):
         self.fullScreenState = False
