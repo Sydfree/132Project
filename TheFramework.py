@@ -233,7 +233,7 @@ class GamingOptions(tkinter.Frame):
                                                                   controller.destroy()])
         BrowserGames.pack()
         
-        ConsoleGames = tkinter.Button(self, text='Browser Games?',command=lambda:[webbrowser.open('https://apps.quanticfoundry.com/recommendations/gamerprofile/videogame/'),
+        ConsoleGames = tkinter.Button(self, text='Game Suggestion?',command=lambda:[webbrowser.open('https://apps.quanticfoundry.com/recommendations/gamerprofile/videogame/'),
                                                                   controller.destroy()])
         ConsoleGames.pack()
 
