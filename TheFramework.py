@@ -30,7 +30,7 @@ class MyGUI(tkinter.Tk):
             frame.grid(row=0, column=0, sticky="nsew")
 
         self.show_frame(StartPage)
-#
+
     def show_frame(self, cont):
 
         frame = self.frames[cont]
@@ -41,12 +41,18 @@ class StartPage(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self,parent)
 
+
+        canvas = tkinter.Canvas()
+        canvas.pack()
+
         StartPhoto = Image.open('Images/maxresdefault.gif')
         tk_image = ImageTk.PhotoImage(StartPhoto)
-
-        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", image=tk_image,
+     
+#image=tk_image,
+       
+        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", 
                               compound='center', font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
+        label.pack(pady=100,padx=100)
 
         Categories = tkinter.Button(self, text="Quarantine Adventure!", command=lambda: controller.show_frame(Category))
         Categories.pack()
@@ -56,6 +62,10 @@ class StartPage(tkinter.Frame):
 
         self.w, self.h = controller.winfo_screenwidth(), controller.winfo_screenheight()
         controller.geometry("%dx%d" % (self.w, self.h))
+
+        img = ImageTk.PhotoImage(Image.open('Images/maxresdefault.gif').resize((self.w, self.h), Image.ANTIALIAS))
+        canvas.background = img  # Keep a reference in case this code is put in a function.
+        bg = canvas.create_image(0, 0, anchor=tkinter.NW, image=img)
 
         #self.config(bg='blue')
 
