@@ -40,18 +40,8 @@ class StartPage(tkinter.Frame):
 
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self,parent)
-
-
-        canvas = tkinter.Canvas()
-        canvas.pack()
-
-        StartPhoto = Image.open('Images/maxresdefault.gif')
-        tk_image = ImageTk.PhotoImage(StartPhoto)
-     
-#image=tk_image,
        
-        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", 
-                              compound='center', font=LARGE_FONT)
+        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", font=LARGE_FONT)
         label.pack(pady=100,padx=100)
 
         Categories = tkinter.Button(self, text="Quarantine Adventure!", command=lambda: controller.show_frame(Category))
@@ -63,11 +53,7 @@ class StartPage(tkinter.Frame):
         self.w, self.h = controller.winfo_screenwidth(), controller.winfo_screenheight()
         controller.geometry("%dx%d" % (self.w, self.h))
 
-        img = ImageTk.PhotoImage(Image.open('Images/maxresdefault.gif').resize((self.w, self.h), Image.ANTIALIAS))
-        canvas.background = img  # Keep a reference in case this code is put in a function.
-        bg = canvas.create_image(0, 0, anchor=tkinter.NW, image=img)
-
-        #self.config(bg='blue')
+        self.config(bg='blue')
 
     def quitFullScreen(self, event):
         self.fullScreenState = False
