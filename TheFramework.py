@@ -374,7 +374,7 @@ class Puzzles(tkinter.Frame):
         Nonograms.config(height = 8, width = 30)
         Nonograms.pack()        
 
-        Return9 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return9 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return9.config(height = 5, width = 30)
         Return9.pack()
 
