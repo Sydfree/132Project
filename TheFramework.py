@@ -41,10 +41,11 @@ class StartPage(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self,parent)
        
-        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", font=LARGE_FONT, bg="blue")
         label.pack(pady=100,padx=100)
 
         Categories = tkinter.Button(self, text="Quarantine Adventure!", command=lambda: controller.show_frame(Category))
+        Categories.config(height = 10, width = 30)
         Categories.pack()
 
         self.fullScreenState = False
@@ -62,25 +63,37 @@ class StartPage(tkinter.Frame):
 class Category(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Doing Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Doing Today?", font=LARGE_FONT, bg="red")
         label.pack(pady=10,padx=10)
 
         self.config(bg='red')
 
         Netflix = tkinter.Button(self, text="Netflix?", command=lambda: controller.show_frame(NetflixOptions))
+        Netflix.config(height = 5, width = 30)
         Netflix.pack()
+
         Music = tkinter.Button(self, text="Music?", command=lambda: controller.show_frame(MusicOptions))
+        Music.config(height = 5, width = 30)
         Music.pack()
+
         Gaming = tkinter.Button(self, text='Gaming?',command=lambda: controller.show_frame(GamingOptions))
+        Gaming.config(height = 5, width = 30)
         Gaming.pack()
+
         Cooking = tkinter.Button(self, text='Cooking?',command=lambda: controller.show_frame(CookingOptions))
+        Cooking.config(height = 5, width = 30)
         Cooking.pack()
+
         Productivity = tkinter.Button(self, text='Productivity?',command=lambda: controller.show_frame(ProductivityOptions))
+        Productivity.config(height = 5, width = 30)
         Productivity.pack()
+
         Workout = tkinter.Button(self, text='Workout?',command=lambda: controller.show_frame(WorkoutOptions))
+        Workout.config(height = 5, width = 30)
         Workout.pack()
 
         Quit1 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit1.config(height = 5, width = 30)
         Quit1.pack()
         
 
@@ -91,31 +104,35 @@ class NetflixOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Are You Feeling A Movie or Some Shows?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Are You Feeling A Movie or Some Shows?", font=LARGE_FONT, bg='#E50914')
         label.pack(pady=10,padx=10)
 
         self.config(bg='#E50914')
 
         Movie = tkinter.Button(self, text='Movies?',command=lambda: controller.show_frame(MovieOptions))
+        Movie.config(height = 10, width = 30)
         Movie.pack()
 
         Show = tkinter.Button(self, text='Show?',command=lambda: controller.show_frame(ShowOptions))
+        Show.config(height = 10, width = 30)
         Show.pack()
 
         Return1 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return1.config(height = 5, width = 30)
         Return1.pack()
 
         Quit2 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit2.config(height = 5, width = 30)
         Quit2.pack()
 
 class MovieOptions(tkinter.Frame):
         
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT, bg='#0E84C8')
         label.pack(pady=10,padx=10)
 
-        self.config(bg='black')
+        self.config(bg='#0E84C8')
 
         ActionMovie = tkinter.Button(self, text='Action?', command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'),
                                                                             controller.destroy()])
@@ -138,18 +155,20 @@ class MovieOptions(tkinter.Frame):
         DocumentaryMovie.pack()
 
         Return2 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(NetflixOptions))
+        Return2.config(height = 5, width = 30)
         Return2.pack()
 
         Quit3 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit3.config(height = 5, width = 30)
         Quit3.pack()
 
 class ShowOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT, bg='#FAFA01' )
         label.pack(pady=10,padx=10)
 
-        self.config(bg='gold')
+        self.config(bg='#FAFA01')
 
         RealityShow = tkinter.Button(self, text='Reality?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/9833?bc=83'),
                                                                            controller.destroy()])
@@ -176,16 +195,18 @@ class ShowOptions(tkinter.Frame):
         DocumentaryMovie.pack()
 
         Return4 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(NetflixOptions))
+        Return4.config(height = 5, width = 30)
         Return4.pack()
 
         Quit5 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit5.config(height = 5, width = 30)
         Quit5.pack()
 
 
 class MusicOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT, bg='green')
         label.pack(pady=10,padx=10)
 
         self.config(bg='green')
@@ -212,16 +233,18 @@ class MusicOptions(tkinter.Frame):
         LoFi.pack()
 
         Return5 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return5.config(height = 5, width = 30)
         Return5.pack()
 
         Quit6 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit6.config(height = 5, width = 30)
         Quit6.pack()
 
 
 class GamingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Broswer Games or Suggest a Console Game?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Broswer Games or Suggest a Console Game?", font=LARGE_FONT, bg='purple')
         label.pack(pady=10,padx=10)
 
         self.config(bg='purple')
@@ -235,9 +258,11 @@ class GamingOptions(tkinter.Frame):
         ConsoleGames.pack()
 
         Return6 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return6.config(height = 5, width = 30)
         Return6.pack()
 
         Quit7 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit7.config(height = 5, width = 30)
         Quit7.pack()        
         
 
@@ -245,10 +270,10 @@ class GamingOptions(tkinter.Frame):
 class CookingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT, bg='#4901FA')
         label.pack(pady=10,padx=10)
 
-        self.config(bg='yellow')
+        self.config(bg='#4901FA')
         
         Breakfast = tkinter.Button(self, text='Breakfast?',command=lambda:[webbrowser.open('https://www.foodnetwork.com/recipes/photos/our-best-breakfast-recipes'),
                                                                            controller.destroy()])
@@ -266,16 +291,18 @@ class CookingOptions(tkinter.Frame):
                                                                    controller.destroy()])
         Snack.pack()
 
-        Return22 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
-        Return22.pack()
+        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return7.config(height = 5, width = 30)
+        Return7.pack()
 
-        Quit6 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
-        Quit6.pack()
+        Quit8 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit8.config(height = 5, width = 30)
+        Quit8.pack()
 
 class ProductivityOptions(tkinter.Frame):
    def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT, bg='silver')
         label.pack(pady=10,padx=10)
 
         self.config(bg='silver')
@@ -291,16 +318,18 @@ class ProductivityOptions(tkinter.Frame):
         Puzzle = tkinter.Button(self, text='Puzzles?',command=lambda: controller.show_frame(Puzzles))
         Puzzle.pack()
 
-        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
-        Return7.pack()
+        Return8 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return8.config(height = 5, width = 30)
+        Return8.pack()
 
-        Quit8 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
-        Quit8.pack()
+        Quit9 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit9.config(height = 5, width = 30)
+        Quit9.pack()
 
 class Puzzles(tkinter.Frame):
    def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT, bg='green')
         label.pack(pady=10,padx=10)
 
         self.config(bg='green')
@@ -317,16 +346,18 @@ class Puzzles(tkinter.Frame):
                                                                      controller.destroy()])
         Nonograms.pack()        
 
-        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
-        Return7.pack()
+        Return9 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return9.config(height = 5, width = 30)
+        Return9.pack()
 
-        Quit8 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
-        Quit8.pack()
+        Quit10 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit10.config(height = 5, width = 30)
+        Quit10.pack()
 
 class WorkoutOptions(tkinter.Frame):
   def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT, bg='orange')
         label.pack(pady=10,padx=10)
 
         self.config(bg='orange')
@@ -343,10 +374,12 @@ class WorkoutOptions(tkinter.Frame):
                                                                  controller.destroy()])
         Core.pack()
 
-        Return8 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
-        Return8.pack()
+        Return10 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return10.config(height = 5, width = 30)
+        Return10.pack()
 
-        Quit9 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
-        Quit9.pack()
+        Quit11 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
+        Quit11.config(height = 5, width = 30)
+        Quit11.pack()
 
 gui = MyGUI()
