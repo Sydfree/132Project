@@ -317,7 +317,7 @@ class Puzzles(tkinter.Frame):
                                                                      controller.destroy()])
         Nonograms.pack()        
 
-        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return7.pack()
 
         Quit8 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
