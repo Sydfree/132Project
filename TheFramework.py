@@ -41,7 +41,7 @@ class StartPage(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self,parent)
        
-        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Click Here To Start Your Quarantine Adventure!", font=LARGE_FONT, bg="blue")
         label.pack(pady=100,padx=100)
 
         Categories = tkinter.Button(self, text="Quarantine Adventure!", command=lambda: controller.show_frame(Category))
@@ -63,7 +63,7 @@ class StartPage(tkinter.Frame):
 class Category(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Doing Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Doing Today?", font=LARGE_FONT, bg="red")
         label.pack(pady=10,padx=10)
 
         self.config(bg='red')
@@ -104,7 +104,7 @@ class NetflixOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Are You Feeling A Movie or Some Shows?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Are You Feeling A Movie or Some Shows?", font=LARGE_FONT, bg='#E50914')
         label.pack(pady=10,padx=10)
 
         self.config(bg='#E50914')
@@ -129,10 +129,10 @@ class MovieOptions(tkinter.Frame):
         
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT, bg='#0E84C8')
         label.pack(pady=10,padx=10)
 
-        self.config(bg='black')
+        self.config(bg='#0E84C8')
 
         ActionMovie = tkinter.Button(self, text='Action?', command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'),
                                                                             controller.destroy()])
@@ -165,10 +165,10 @@ class MovieOptions(tkinter.Frame):
 class ShowOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT, bg='#FAFA01' )
         label.pack(pady=10,padx=10)
 
-        self.config(bg='gold')
+        self.config(bg='#FAFA01')
 
         RealityShow = tkinter.Button(self, text='Reality?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/9833?bc=83'),
                                                                            controller.destroy()])
@@ -206,7 +206,7 @@ class ShowOptions(tkinter.Frame):
 class MusicOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT, bg='green')
         label.pack(pady=10,padx=10)
 
         self.config(bg='green')
@@ -244,7 +244,7 @@ class MusicOptions(tkinter.Frame):
 class GamingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="Broswer Games or Suggest a Console Game?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="Broswer Games or Suggest a Console Game?", font=LARGE_FONT, bg='purple')
         label.pack(pady=10,padx=10)
 
         self.config(bg='purple')
@@ -270,10 +270,10 @@ class GamingOptions(tkinter.Frame):
 class CookingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT, bg='#4901FA')
         label.pack(pady=10,padx=10)
 
-        self.config(bg='yellow')
+        self.config(bg='#4901FA')
         
         Breakfast = tkinter.Button(self, text='Breakfast?',command=lambda:[webbrowser.open('https://www.foodnetwork.com/recipes/photos/our-best-breakfast-recipes'),
                                                                            controller.destroy()])
@@ -302,7 +302,7 @@ class CookingOptions(tkinter.Frame):
 class ProductivityOptions(tkinter.Frame):
    def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT, bg='silver')
         label.pack(pady=10,padx=10)
 
         self.config(bg='silver')
@@ -329,7 +329,7 @@ class ProductivityOptions(tkinter.Frame):
 class Puzzles(tkinter.Frame):
    def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT, bg='green')
         label.pack(pady=10,padx=10)
 
         self.config(bg='green')
@@ -357,7 +357,7 @@ class Puzzles(tkinter.Frame):
 class WorkoutOptions(tkinter.Frame):
   def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT)
+        label = tkinter.Label(self, text="What Are You Interested In Working Today?", font=LARGE_FONT, bg='orange')
         label.pack(pady=10,padx=10)
 
         self.config(bg='orange')
