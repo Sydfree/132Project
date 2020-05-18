@@ -372,16 +372,11 @@ class Puzzles(tkinter.Frame):
         Nonograms = tkinter.Button(self, text='Nonograms',command=lambda:[webbrowser.open('https://www.puzzle-nonograms.com/'),
                                                                      controller.destroy()])
         Nonograms.config(height = 8, width = 30)
-        Nonograms.pack()        
+        Nonograms.pack()
 
-<<<<<<< HEAD
-        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
-        Return7.pack()
-=======
         Return9 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return9.config(height = 5, width = 30)
         Return9.pack()
->>>>>>> c1a78469a891a1d50dd6dbaaf56856a153d36aa1
 
         Quit10 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
         Quit10.config(height = 5, width = 30)
