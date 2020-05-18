@@ -288,13 +288,9 @@ class GamingOptions(tkinter.Frame):
 class CookingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-<<<<<<< HEAD
-        label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT, bg='#4901FA')
-        label.place(relx=.5, rely = .1,anchor ="c")
-=======
+
         label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT, bg='SteelBlue2')
-        label.pack(pady=10,padx=10)
->>>>>>> e5a2d2001f2d43eb67bad61ee64c7deb0aa048a4
+        label.place(relx=.5, rely = .1,anchor ="c")
 
         self.config(bg='SteelBlue2')
         
