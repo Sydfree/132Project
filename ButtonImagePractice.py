@@ -15,6 +15,6 @@ photo = PhotoImage(file = r"Images/maxresdefault.gif")
   
 # here, image option is used to 
 # set image on button 
-Button(root, text = 'Click Me !', image = photo).pack(side = TOP) 
+Button(root, text = 'Click Me !', image = photo, compound = CENTER).pack(side = TOP) 
   
 mainloop() 

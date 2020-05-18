@@ -136,22 +136,27 @@ class MovieOptions(tkinter.Frame):
 
         ActionMovie = tkinter.Button(self, text='Action?', command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/1365?bc=34399'),
                                                                             controller.destroy()])
+        ActionMovie.config(height = 5, width = 30)
         ActionMovie.pack()
 
         RomanceMovie = tkinter.Button(self, text='Romance?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/8883?bc=34399'),
                                                                              controller.destroy()])
+        RomanceMovie.config(height = 5, width = 30)
         RomanceMovie.pack()
 
         HorrorMovie = tkinter.Button(self, text='Horror?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/8711?bc=34399'),
                                                                            controller.destroy()])
+        HorrorMovie.config(height = 5, width = 30)
         HorrorMovie.pack()
 
         ComedyMovie = tkinter.Button(self, text='Comedy?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/6548?bc=34399'),
                                                                            controller.destroy()])
+        ComedyMovie.config(height = 5, width = 30)
         ComedyMovie.pack()
 
         DocumentaryMovie = tkinter.Button(self, text='Documentary?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/2243108?bc=34399'),
                                                                                     controller.destroy()])
+        DocumentaryMovie.config(height = 5, width = 30)
         DocumentaryMovie.pack()
 
         Return2 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(NetflixOptions))
@@ -165,34 +170,40 @@ class MovieOptions(tkinter.Frame):
 class ShowOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Genre Are We Talking", font=LARGE_FONT, bg='#FAFA01' )
+        label = tkinter.Label(self, text="What Genre Are We Talking?", font=LARGE_FONT, bg='#FAFA01' )
         label.pack(pady=10,padx=10)
 
         self.config(bg='#FAFA01')
 
         RealityShow = tkinter.Button(self, text='Reality?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/9833?bc=83'),
                                                                            controller.destroy()])
+        RealityShow.config(height = 3, width = 30)
         RealityShow.pack()
 
         ActionShow = tkinter.Button(self, text='Action?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/10673?bc=83'),
                                                                          controller.destroy()])
+        ActionShow.config(height = 3, width = 30)
         ActionShow.pack()
 
         RomanceShow = tkinter.Button(self, text='Romance?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/26156?bc=83'),
                                                                            controller.destroy()])
+        RomanceShow.config(height = 3, width = 30)
         RomanceShow.pack()
 
         HorrorShow = tkinter.Button(self, text='Horror?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/83059?bc=83'),
                                                                          controller.destroy()])
+        HorrorShow.config(height = 3, width = 30)
         HorrorShow.pack()
 
         ComedyShow = tkinter.Button(self, text='Comedy?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/10375?bc=83'),
                                                                          controller.destroy()])
+        ComedyShow.config(height = 3, width = 30)
         ComedyShow.pack()
 
-        DocumentaryMovie = tkinter.Button(self, text='Documentary?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/10105?bc=83'),
+        DocumentaryShow = tkinter.Button(self, text='Documentary?',command=lambda:[webbrowser.open('https://www.netflix.com/browse/genre/10105?bc=83'),
                                                                                     controller.destroy()])
-        DocumentaryMovie.pack()
+        DocumentaryShow.config(height = 3, width = 30)
+        DocumentaryShow.pack()
 
         Return4 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(NetflixOptions))
         Return4.config(height = 5, width = 30)
@@ -214,22 +225,27 @@ class MusicOptions(tkinter.Frame):
 
         Country = tkinter.Button(self, text='Country?',command=lambda:[webbrowser.open('https://open.spotify.com/playlist/37i9dQZF1DX1lVhptIYRda'),
                                                                        controller.destroy()])
+        Country.config(height = 5, width = 30)
         Country.pack()
 
         Rock = tkinter.Button(self, text='Rock?',command=lambda:[webbrowser.open('https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U'),
                                                                  controller.destroy()])
+        Rock.config(height = 5, width = 30)
         Rock.pack()
 
         Rap = tkinter.Button(self, text='Rap?',command=lambda:[webbrowser.open('https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd'),
                                                                controller.destroy()])
+        Rap.config(height = 5, width = 30)
         Rap.pack()
 
         RandB = tkinter.Button(self, text='R&B?',command=lambda:[webbrowser.open('https://open.spotify.com/playlist/37i9dQZF1DX4SBhb3fqCJd'),
                                                                  controller.destroy()])
+        RandB.config(height = 5, width = 30)
         RandB.pack()
 
         LoFi = tkinter.Button(self, text='Lo-Fi?',command=lambda:[webbrowser.open('https://open.spotify.com/playlist/0TCxLrp0tEZrkGkaWhnFrE'),
                                                                   controller.destroy()])
+        LoFi.config(height = 5, width = 30)
         LoFi.pack()
 
         Return5 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
@@ -251,10 +267,12 @@ class GamingOptions(tkinter.Frame):
 
         BrowserGames = tkinter.Button(self, text='Browser Games?',command=lambda:[webbrowser.open('https://www.miniclip.com/games/en/'),
                                                                   controller.destroy()])
+        BrowserGames.config(height = 10, width = 30)
         BrowserGames.pack()
         
         ConsoleGames = tkinter.Button(self, text='Game Suggestion?',command=lambda:[webbrowser.open('https://apps.quanticfoundry.com/recommendations/gamerprofile/videogame/'),
                                                                   controller.destroy()])
+        ConsoleGames.config(height = 10, width = 30)
         ConsoleGames.pack()
 
         Return6 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
@@ -277,18 +295,22 @@ class CookingOptions(tkinter.Frame):
         
         Breakfast = tkinter.Button(self, text='Breakfast?',command=lambda:[webbrowser.open('https://www.foodnetwork.com/recipes/photos/our-best-breakfast-recipes'),
                                                                            controller.destroy()])
+        Breakfast.config(height = 5, width = 30)
         Breakfast.pack()
 
         Lunch = tkinter.Button(self, text='Lunch?',command=lambda:[webbrowser.open('https://www.foodnetwork.com/search/lunch-/COURSE_DFACET:0/tag%23meal-type:lunch'),
                                                                    controller.destroy()])
+        Lunch.config(height = 5, width = 30)
         Lunch.pack()
 
         Dinner = tkinter.Button(self, text='Dinner?',command=lambda:[webbrowser.open('https://www.foodnetwork.com/healthy/packages/healthy-every-week/healthy-mains/healthy-weeknight-dinners'),
                                                                      controller.destroy()])
+        Dinner.config(height = 5, width = 30)
         Dinner.pack()
 
         Snack = tkinter.Button(self, text='Snack?',command=lambda:[webbrowser.open('https://www.foodnetwork.com/search/snack-/COURSE_DFACET:0/tag%23meal-type:snack'),
                                                                    controller.destroy()])
+        Snack.config(height = 5, width = 30)
         Snack.pack()
 
         Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
@@ -309,13 +331,16 @@ class ProductivityOptions(tkinter.Frame):
 
         Homework = tkinter.Button(self, text='School? Stay Organized!',command=lambda:[webbrowser.open('https://www.amazon.com/slp/planners-for-college-students/k6f77xpfpfohtp9'),
                                                                                        controller.destroy()])
+        Homework.config(height = 8, width = 30)
         Homework.pack()
 
         Chores = tkinter.Button(self, text='Chores?',command=lambda:[webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'),
                                                                      controller.destroy()])
+        Chores.config(height = 8, width = 30)
         Chores.pack()
 
         Puzzle = tkinter.Button(self, text='Puzzles?',command=lambda: controller.show_frame(Puzzles))
+        Puzzle.config(height = 8, width = 30)
         Puzzle.pack()
 
         Return8 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
@@ -329,26 +354,34 @@ class ProductivityOptions(tkinter.Frame):
 class Puzzles(tkinter.Frame):
    def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT, bg='green')
+        label = tkinter.Label(self, text="What Are You Interested In Accomplishing Today?", font=LARGE_FONT, bg='SpringGreen3')
         label.pack(pady=10,padx=10)
 
-        self.config(bg='green')
+        self.config(bg='SpringGreen3')
 
         Sudoku = tkinter.Button(self, text='Sudoku?',command=lambda:[webbrowser.open('https://sudoku.com/'),
                                                                                        controller.destroy()])
+        Sudoku.config(height = 8, width = 30)
         Sudoku.pack()
 
         Jigsaw = tkinter.Button(self, text='Jigsaw Puzzle?',command=lambda:[webbrowser.open('https://thejigsawpuzzles.com/'),
                                                                      controller.destroy()])
+        Jigsaw.config(height = 8, width = 30)
         Jigsaw.pack()
 
         Nonograms = tkinter.Button(self, text='Nonograms',command=lambda:[webbrowser.open('https://www.puzzle-nonograms.com/'),
                                                                      controller.destroy()])
+        Nonograms.config(height = 8, width = 30)
         Nonograms.pack()        
 
-        Return9 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
+<<<<<<< HEAD
+        Return7 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
+        Return7.pack()
+=======
+        Return9 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(ProductivityOptions))
         Return9.config(height = 5, width = 30)
         Return9.pack()
+>>>>>>> c1a78469a891a1d50dd6dbaaf56856a153d36aa1
 
         Quit10 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
         Quit10.config(height = 5, width = 30)
@@ -364,14 +397,17 @@ class WorkoutOptions(tkinter.Frame):
 
         Arms = tkinter.Button(self, text='Arms?',command=lambda:[webbrowser.open('https://www.workout-generator.com/arm-workout.html'),
                                                                  controller.destroy()])
+        Arms.config(height = 8, width = 30)
         Arms.pack()
 
         Legs = tkinter.Button(self, text='Legs?',command=lambda:[webbrowser.open('https://www.workout-generator.com/leg-workout.html'),
                                                                  controller.destroy()])
+        Legs.config(height = 8, width = 30)
         Legs.pack()
 
         Core = tkinter.Button(self, text='Core?',command=lambda:[webbrowser.open('https://www.workout-generator.com/ab-workout.html'),
                                                                  controller.destroy()])
+        Core.config(height = 8, width = 30)
         Core.pack()
 
         Return10 = tkinter.Button(self, text="Go Back", command=lambda: controller.show_frame(Category))
