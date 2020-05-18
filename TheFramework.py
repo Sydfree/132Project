@@ -64,37 +64,37 @@ class Category(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
         label = tkinter.Label(self, text="What Are You Interested In Doing Today?", font=LARGE_FONT, bg="red")
-        label.pack(pady=10,padx=10)
+        label.grid(row = 0, column = 1)
 
         self.config(bg='red')
 
         Netflix = tkinter.Button(self, text="Netflix?", command=lambda: controller.show_frame(NetflixOptions))
         Netflix.config(height = 5, width = 30)
-        Netflix.pack()
+        Netflix.grid(column=2,row=1)
 
         Music = tkinter.Button(self, text="Music?", command=lambda: controller.show_frame(MusicOptions))
         Music.config(height = 5, width = 30)
-        Music.pack()
+        Music.grid(column=5,row=1)
 
         Gaming = tkinter.Button(self, text='Gaming?',command=lambda: controller.show_frame(GamingOptions))
         Gaming.config(height = 5, width = 30)
-        Gaming.pack()
+        Gaming.grid(column=2,row=2)
 
         Cooking = tkinter.Button(self, text='Cooking?',command=lambda: controller.show_frame(CookingOptions))
         Cooking.config(height = 5, width = 30)
-        Cooking.pack()
+        Cooking.grid(column=5,row=2)
 
         Productivity = tkinter.Button(self, text='Productivity?',command=lambda: controller.show_frame(ProductivityOptions))
         Productivity.config(height = 5, width = 30)
-        Productivity.pack()
+        Productivity.grid(column=2,row=3)
 
         Workout = tkinter.Button(self, text='Workout?',command=lambda: controller.show_frame(WorkoutOptions))
         Workout.config(height = 5, width = 30)
-        Workout.pack()
+        Workout.grid(column=5,row=3)
 
         Quit1 = tkinter.Button(self, text="Click to Quit", command = controller.destroy)
         Quit1.config(height = 5, width = 30)
-        Quit1.pack()
+        Quit1.grid(column=4,row=5)
         
 
 
