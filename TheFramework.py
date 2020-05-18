@@ -288,10 +288,10 @@ class GamingOptions(tkinter.Frame):
 class CookingOptions(tkinter.Frame):
     def __init__(self, parent, controller):
         tkinter.Frame.__init__(self, parent)
-        label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT, bg='#4901FA')
+        label = tkinter.Label(self, text="What're You Wanting To Cook?", font=LARGE_FONT, bg='SteelBlue2')
         label.pack(pady=10,padx=10)
 
-        self.config(bg='#4901FA')
+        self.config(bg='SteelBlue2')
         
         Breakfast = tkinter.Button(self, text='Breakfast?',command=lambda:[webbrowser.open('https://www.foodnetwork.com/recipes/photos/our-best-breakfast-recipes'),
                                                                            controller.destroy()])
