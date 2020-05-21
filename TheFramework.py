@@ -1,3 +1,9 @@
+###################################################################
+# Name: Sydney Holland, Aidan Cheatham, Anassas Anderson
+# Date: May 18, 2020 
+# Description: Final Program
+####################################################################
+
 import webbrowser
 from tkinter import *
 import tkinter as tkinter
